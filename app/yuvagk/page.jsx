@@ -29,7 +29,7 @@ const YuvaGK = () => {
     <main>
       <SectionHeader sectionLabel="Yuva Gopakuteeram"/>
       <section className="px-48 max-md:px-12 mt-16 max-container">
-            <p className='font-palanquin text-center text-black text-lg max-sm:text-[10px] max-sm:leading-7 leading-8'>
+            <p className='font-palanquin text-center text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
             Suspendisse mattis fringilla lorem, ut pharetra est luctus eget. Nulla in porttitor arcu. Vestibulum enim eros, consectetur ut ultrices ac, convallis vitae augue. Nulla fringilla urna et viverra congue. Aliquam cursus, massa quis interdum pellentesque, ligula turpis vehicula nisl, non egestas odio sapien eget nisl. Nullam ac dapibus nulla. Maecenas in felis enim. Morbi velit turpis, luctus a dui eget, cursus feugiat ipsum. Aenean a porta leo.
             </p>
         </section>

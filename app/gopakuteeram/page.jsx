@@ -7,7 +7,7 @@ const Gopakuteeram = () => {
     <main className='bg-beige'>
       <SectionHeader sectionLabel="Gopa Kuteeram"/>
       <section className='mt-20 px-48 py-12 max-md:px-20 max-sm:px-12 max-container bg-white'>
-        <p className='font-palanquin text-left text-black text-lg max-sm:text-[10px] max-sm:leading-7 leading-8'>
+        <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
         The term <b>‘Gopa Kuteeram’</b> in Sanskrit refers to the play-house of young Lord Krishna and the Gopas, his playmates of Vrindavan. Hence, <b>‘Gopa Kuteeram’</b> signifies a place where children have enormous fun along with and in the presence of the Lord.
         <br/>
         <br/>
@@ -15,11 +15,11 @@ const Gopakuteeram = () => {
         </p>
 
         <blockquote className="mx-8 my-12 px-4 border-s-4 border-gray-300 bg-gray-100">
-            <p className="text-xl font-caudex font-medium leading-10 text-primary-blue max-sm:text-[10px] max-sm:leading-7">
+            <p className="text-xl font-caudex font-medium leading-10 text-primary-blue max-sm:text-[12px] max-sm:leading-7">
             righteous virtues , seeds of bhakthi and moral values must be sown in the young minds as they tend to grap them very quickly and retain them forever.
             </p>
         </blockquote>
-        <p className='font-palanquin text-left text-black text-lg max-sm:text-[10px] max-sm:leading-7 leading-8'>
+        <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
         Hence, this Gopa kuteeram is our initiative to impart cultural, traditional and moral values to the children of age between 3- 15 through a structured syllabus , laced with devotion in a fun filled interactive environment
         </p>
       </section>

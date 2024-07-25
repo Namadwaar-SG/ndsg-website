@@ -36,7 +36,7 @@ const Classes = () => {
         <SectionHeader sectionLabel="Classes"/>
         <section>
           <div className='max-container padding-y px-36 max-sm:p-8'>
-              <p className='font-palanquin text-black text-lg leading-8 max-sm:text-[10px] max-sm:leading-7'>
+              <p className='font-palanquin text-black text-lg leading-8 max-sm:text-[12px] max-sm:leading-7'>
               Suspendisse mattis fringilla lorem, ut pharetra est luctus eget. Nulla in porttitor arcu. Vestibulum enim eros, consectetur ut ultrices ac, convallis vitae augue. Nulla fringilla urna et viverra congue. Aliquam cursus, massa quis interdum pellentesque, ligula turpis vehicula nisl, non egestas odio sapien eget nisl. Nullam ac dapibus nulla. Maecenas in felis enim. Morbi velit turpis, luctus a dui eget, cursus feugiat ipsum. Aenean a porta leo.</p>          </div>
         </section>
 

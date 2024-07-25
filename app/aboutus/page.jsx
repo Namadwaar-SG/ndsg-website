@@ -6,7 +6,7 @@ const AboutUs = () => {
     <main>
         <SectionHeader sectionLabel="About Us"/>
         <section className="px-48 max-sm:px-12 mt-16 max-container">
-            <p className='font-palanquin text-left text-black text-base max-sm:text-[10px] max-sm:leading-7 leading-8'>
+            <p className='font-palanquin text-left text-black text-base max-sm:text-[12px] max-sm:leading-7 leading-8'>
 
                 Namadwaar Singapore is a registered Hindu society inspired by HH Sri Sri Muralidhara Swamiji established since Nov 8, 2012. The concept of Namadwaar is a worldwide initiative of our master to strive towards Universal Peace and Harmony through inner transformation by the simple path of chanting the Divine Names.
                 <br/>
@@ -20,7 +20,7 @@ const AboutUs = () => {
 
         <section className="px-48 max-sm:px-8 mt-12 max-container">
             <blockquote className="mx-8 my-12 px-4 border-s-4 border-gray-300 bg-gray-100">
-                <p className="text-xl text-center font-caudex font-medium leading-10 text-primary-blue max-sm:text-[9px] max-sm:leading-7">
+                <p className="text-xl text-center font-caudex font-medium leading-10 text-primary-blue max-sm:text-[10px] max-sm:leading-7">
                     Hare Rama Hare Rama Rama Rama Hare Hare
                     <br/>
                     Hare Krishna Hare Krishna Krishna Krishna Hare Hare
@@ -39,7 +39,7 @@ const AboutUs = () => {
         </div>
 
         <section className="px-48 max-sm:px-12 mt-16 mb-20 max-container">
-            <p className='font-palanquin text-left text-black text-base max-sm:text-[10px] max-sm:leading-7 leading-8'>
+            <p className='font-palanquin text-left text-black text-base max-sm:text-[12px] max-sm:leading-7 leading-8'>
 
                 Namadwaar Singapore is a registered Hindu society inspired by HH Sri Sri Muralidhara Swamiji established since Nov 8, 2012. The concept of Namadwaar is a worldwide initiative of our master to strive towards Universal Peace and Harmony through inner transformation by the simple path of chanting the Divine Names.
                 <br/>
