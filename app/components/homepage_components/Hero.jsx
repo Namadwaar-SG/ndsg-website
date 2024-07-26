@@ -17,7 +17,7 @@ const Hero = () => {
       <div className='w-1/2 max-lg:w-3/4 flex items-center'>
         <img src="/assets/images/heroicon.png"
           alt="Logo"
-          className='w-full object-contain'
+          className='w-full object-contain transition-transform hover:scale-105 ease-in duration-500 delay-150'
         />
   
       </div>
