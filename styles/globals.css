@@ -46,6 +46,11 @@ h2.activities:after {
 }
 
 @layer utilities {
+
+  .underlined {
+    @apply underline underline-offset-4 decoration-teal-500 decoration-2;
+  }
+
   .padding {
     @apply sm:px-20 px-8;
   }
@@ -55,7 +60,7 @@ h2.activities:after {
   }
 
   .padding-y {
-    @apply sm:py-16 py-8;
+    @apply sm:py-16 py-10;
   }
 
   .padding-l {

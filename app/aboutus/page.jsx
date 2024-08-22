@@ -6,7 +6,7 @@ const AboutUs = () => {
     <main>
         <SectionHeader sectionLabel="About Us"/>
         <section className="px-48 max-md:px-12 mt-16 max-container">
-            <p className='font-palanquin text-left text-black text-base max-sm:text-[12px] max-sm:leading-7 leading-8'>
+            <p className='font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
 
                 Namadwaar Singapore, founded in November 2012, is a cherished branch of the Global Organization for Divinity (GOD), standing as a testament to the transformative power of Nama Sankirtan guided by the blessings of His Holiness Sri Sri Muralidhara Swamiji and the initiative of devotees from Chaitanya Mahaprabhu Nama Bhiksha Kendra. Rooted in the timeless wisdom of the Vedas, Namadwaar Singapore embraces the universal practice of chanting the Maha Mantra as a gateway to inner peace, prosperity, and universal brotherhood.
                 <br/>
@@ -20,7 +20,7 @@ const AboutUs = () => {
                     Hare Krishna Hare Krishna Krishna Krishna Hare Hare
                 </p>
             </blockquote>
-            <p className='font-palanquin text-left text-black text-base max-sm:text-[12px] max-sm:leading-7 leading-8'>
+            <p className='font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                 This sacred practice not only enriches one spiritually, but also addresses the contemporary challenges faced by humanity. The goal of this movement is to reach people in every corner of the world and make them realize the value in chanting the divine Name of God for happiness, 
                 peace and prosperity.
             </p>
@@ -38,7 +38,7 @@ const AboutUs = () => {
         </div>
 
         <section className="px-48 max-md:px-12 mt-16 max-container">
-            <p className='font-palanquin text-left text-black text-base max-sm:text-[12px] max-sm:leading-7 leading-8'>
+            <p className='font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                 
                 In a world plagued by endless strife and material pursuits, Namadwaar Singapore strives to offer solace and spiritual elevation through regular community gatherings, outreach programs and community service initiatives. Echoing Sri Sri Muralidhara Swamiji's teachings, Namadwaar Singapore embodies the essence of Bhakti to Sri Krishna, making the profound benefits of Nama Kirtan accessible to all.
                 <br/>

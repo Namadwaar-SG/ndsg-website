@@ -24,23 +24,22 @@ const Gopakuteeram = () => {
         </p>
       </section>
       <section className='mt-20 max-sm:mt-8'>
-            <div className='h-[600px] max-md:h-[400px] bg-hero bg-center bg-cover lg:bg-fixed relative'>
-             <div className='flex justify-center items-start flex-col w-1/2 h-full whitespace-normal bg-dark-red bg-opacity-75 max-md:w-full'>
-                <h1 className='font-caudex text-beige text-4xl max-md:text-3xl max-md:leading-8 max-sm:text-2xl font-bold padding-y px-14 '>What you'll learn:</h1>
-                <ul className='font-palanquin text-beige text-xl max-md:text-lg max-md:leading-8 max-sm:text-sm px-16 list-disc'>
-                    <li className='mb-5'>Small slokas on Ganesha, Hanuman,
-                        Muruga, Krishna, Rama, Shiva, Lakshmi,
-                        Saraswathi, Hayagriva, Guru
+            <div className='h-auto bg-hero bg-center bg-cover lg:bg-fixed relative'>
+             <div className='py-36 max-md:py-16 flex flex-col gap-8 justify-center items-start px-16 w-1/2 h-full whitespace-normal bg-dark-red bg-opacity-75 max-lg:w-full'>
+                <h1 className='font-caudex text-beige text-4xl max-md:text-3xl max-md:leading-8 max-sm:text-2xl font-bold'>What you'll learn:</h1>
+                <ul className='pl-6 flex flex-col gap-6 font-palanquin text-beige text-xl max-md:text-lg max-md:leading-8 max-sm:text-sm list-disc'>
+                    <li>Small slokas on Ganesha, Hanuman,
+                        Muruga, Krishna and more
                     </li>
-                    <li className='mb-5'>Achuthashtakam, Madhurashtakam,
-                        Guruashtakam
+                    <li>Exciting stories from the scriptures 
                     </li>
-                    <li className='mb-5'>Achuthashtakam, Madhurashtakam,
-                        Guruashtakam
+                    <li>Madhurageetham and Namavalis
                     </li>
-                    <li className='mb-5'>Achuthashtakam, Madhurashtakam,
-                        Guruashtakam
+                    <li>Ashtakams such as Madhurashtakam,
+                    Guruashtakam, and more
                     </li>
+                    <li>Skits and drama to reenact stories</li>
+                    <li>Dance and music as a way to express spirituality and religion</li>
                 
                 </ul>
              </div>
@@ -50,7 +49,7 @@ const Gopakuteeram = () => {
             <div className='flex flex-row max-md:flex-col-reverse '>
                 <div className='bg-white w-1/2 px-44 max-lg:p-12 max-md:w-full flex flex-col justify-center items-center text-center font-palanquin text-lg'>
                         <p className=''>
-                        Every year GK annual day is celebrated where our kids performs skits, dance etc duly trained by our GK teachers and parent volunteers
+                        Every year GK annual day is celebrated where our kids perform skits, dance and music, duly trained by our GK teachers and parent volunteers
                         </p>
                         <p className='font-bold mt-8'>
                         Enrol your children in our GK classes today.
@@ -70,10 +69,10 @@ const Gopakuteeram = () => {
         </section>
 
         <section className='bg-white mt-20 max-sm:mt-8 py-12 px-16'>
-            <h1 className='font-caudex text-4xl max-md:text-3xl max-md:leading-8 font-bold text-center mb-16 text-primary-maroon'>Schedule</h1>
-            <div className='grid grid-cols-2 max-md:grid-cols-1 gap-x-2 gap-y-20 justify-items-center font-palanquin'>
-                <div className='flex flex-col gap-4'>
-                    <h1 className='text-2xl font-caudex'>Tanah Mera Kecil Road</h1>
+            <h1 className='font-caudex text-4xl max-md:text-3xl max-md:leading-8 font-bold text-left mb-16 text-primary-maroon'>Schedule</h1>
+            <div className='grid grid-cols-2 max-md:grid-cols-1 gap-x-2 gap-y-20 justify-items-start font-palanquin'>
+                <div className='flex flex-col gap-4 border-b border-gray-300'>
+                    <h1 className='text-2xl font-caudex'>Tanah Merah (online available)</h1>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -81,9 +80,8 @@ const Gopakuteeram = () => {
                         <div>Slots</div>
                     </div>
                     <ul className='list-disc list-inside'>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
+                        <li>Monday 3:00 - 4:00pm</li>
+                        <li>Wednesday 4:30 - 5:30pm</li>
                     </ul>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -91,11 +89,11 @@ const Gopakuteeram = () => {
                         </svg>
                         <div>Mrs. Lakshmi Prakash @ +65 9111 1685</div>
                     </div> 
-                    <hr class="mt-6 w-full h-px bg-gray-300 border-0 rounded"/>
+                    <br />
                 </div>
 
-                <div className='flex flex-col gap-4'>
-                    <h1 className='text-2xl font-caudex'>Tanah Mera Kecil Road</h1>
+                <div className='flex flex-col gap-4 border-b border-gray-300'>
+                    <h1 className='text-2xl font-caudex'>Tampines St 33</h1>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -103,22 +101,19 @@ const Gopakuteeram = () => {
                         <div>Slots</div>
                     </div>
                     <ul className='list-disc list-inside'>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
+                        <li>Thursdays 4:30 - 5:30pm</li>
                     </ul>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
-                        <div>Mrs. Lakshmi Prakash @ +65 9111 1685</div>
+                        <div>Mrs. Uma Raghu @ +65 8332 5293</div>
                     </div> 
-                    <hr class="mt-6 w-full h-px bg-gray-300 border-0 rounded"/>
+                    <br />
                 </div>
 
-
-                <div className='flex flex-col gap-4'>
-                    <h1 className='text-2xl font-caudex'>Tanah Mera Kecil Road</h1>
+                <div className='flex flex-col gap-4 border-b border-gray-300'>
+                    <h1 className='text-2xl font-caudex'>Tampines Ave 7 (online available)</h1>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -126,21 +121,26 @@ const Gopakuteeram = () => {
                         <div>Slots</div>
                     </div>
                     <ul className='list-disc list-inside'>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
+                        <li>Wednesday 5:45 - 6:45pm</li>
+                        <li>Thursday 6:00 - 7:00pm (online)</li>
+                    </ul>
+                    <ul className='list-disc list-inside'>
+                        Sloka Classes (online):
+                        <li>Thursday 12:30 - 1:30pm (for ladies)</li>
+                        <li>Friday 8:30 - 9:30pm (age 12+) </li>
+                        <li>Sunday 8:30 - 9:30pm (age 12+)</li>
                     </ul>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
-                        <div>Mrs. Lakshmi Prakash @ +65 9111 1685</div>
+                        <div>Mrs. Bhanu Sridhar @ +65 8260 4847</div>
                     </div> 
-                    <hr class="mt-6 w-full h-px bg-gray-300 border-0 rounded"/>
+                    <br />
                 </div>
 
-                <div className='flex flex-col gap-4'>
-                    <h1 className='text-2xl font-caudex'>Tanah Mera Kecil Road</h1>
+                <div className='flex flex-col gap-4 border-b border-gray-300'>
+                    <h1 className='text-2xl font-caudex'>Online</h1>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -148,18 +148,19 @@ const Gopakuteeram = () => {
                         <div>Slots</div>
                     </div>
                     <ul className='list-disc list-inside'>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
-                        <li>Monday 5:30 - 6:30pm</li>
+                        <li>Sunday 10:00 - 11:00am (ages 8+)</li>
+                        <li>Sunday 11:00 - 12:00pm (ages 4-8)</li>
                     </ul>
                     <div className='flex flex-row gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
-                        <div>Mrs. Lakshmi Prakash @ +65 9111 1685</div>
+                        <div>Mrs. Janani Ganesan @ +65 8732 9849</div>
                     </div> 
-                    <hr class="mt-6 w-full h-px bg-gray-300 border-0 rounded"/>
+                    <br />
                 </div>
+
+                
                 
             </div>
         </section>

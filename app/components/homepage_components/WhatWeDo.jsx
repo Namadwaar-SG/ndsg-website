@@ -53,7 +53,7 @@ const WhatWeDo = () => {
       >
         <div className="aboutpagecards">
           <Link href='/weeklysatsangh'>
-            <img className="w-full h-4/5 object-cover" src="/assets/images/pic1.jpeg" alt="Sunset in the mountains"/>
+            <img className="w-full h-4/5 object-cover" src="/assets/images/satsang.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
               <div className="text-lg max-md:text-base max-sm:text-sm">Weekly Satsangh</div>
             </div>
@@ -62,7 +62,7 @@ const WhatWeDo = () => {
         </div>
         <div className="aboutpagecards">
           <Link href='/housesatsangh'>
-            <img className="w-full h-4/5 object-cover" src="/assets/images/pic2.jpeg" alt="Sunset in the mountains"/>
+            <img className="w-full h-4/5 object-cover" src="/assets/images/house4.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
               <div className="text-lg max-md:text-base max-sm:text-sm">House Satsangh</div>
             </div>
@@ -80,7 +80,7 @@ const WhatWeDo = () => {
 
         <div className="aboutpagecards">
           <Link href='/storytime'>
-            <img className="w-full h-4/5 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
+            <img className="w-full h-4/5 object-cover" src="/assets/images/pc6.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
               <div className="text-lg max-md:text-base max-sm:text-sm">Akhanda Nama</div>
             </div>
@@ -109,7 +109,7 @@ const WhatWeDo = () => {
         > 
           <div className="aboutpagecards">
             <Link href='/classes'>
-              <img className="w-full h-3/4 object-cover" src="/assets/images/pic1.jpeg" alt="Sunset in the mountains"/>
+              <img className="w-full h-3/4 object-cover" src="/assets/images/gk.jpg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
                 <div className="text-lg max-md:text-base max-sm:text-sm">Gopakuteeram</div>
               </div>
@@ -117,7 +117,7 @@ const WhatWeDo = () => {
           </div>
           <div className="aboutpagecards">
             <Link href='/classes'>
-              <img className="w-full h-3/4 object-cover" src="/assets/images/pic2.jpeg" alt="Sunset in the mountains"/>
+              <img className="w-full h-3/4 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
                 <div className="text-lg max-md:text-base max-sm:text-sm">Itihasa/Purana Class</div>
               </div>
@@ -126,29 +126,12 @@ const WhatWeDo = () => {
           </div>
           <div className="aboutpagecards">
             <Link href='/classes'>
-              <img className="w-full h-3/4 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
+              <img className="w-full h-3/4 object-cover" src="/assets/images/yuva.jpg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
                 <div className="text-lg max-md:text-base max-sm:text-sm">Yuva Gopakuteeram</div>
               </div>
             </Link>
             
-          </div>
-          <div className="aboutpagecards">
-            <Link href='/classes'>
-              <img className="w-full h-3/4 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
-              <div className="px-6 py-4">
-                <div className="text-lg max-md:text-base max-sm:text-sm">Madhurageetham</div>
-              </div>
-            </Link>
-            
-          </div>
-          <div className="aboutpagecards">
-            <Link href='/classes'>
-              <img className="w-full h-3/4 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
-              <div className="px-6 py-4">
-                <div className="text-lg max-md:text-base max-sm:text-sm">Sanskrit Class</div>
-              </div>
-            </Link>
           </div>
         </Carousel>
       

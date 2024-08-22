@@ -3,10 +3,10 @@ import React from 'react'
 const WhoWeAre = () => {
   return (
     <section
-      className="w-full flex flex-row justify-center gap-12"
+      className="flex flex-row justify-center gap-12"
     >
       <div className="hidden lg:block w-2/5" >
-        <img src="/assets/images/pic2.jpeg"
+        <img src="/assets/images/whoweare.jpg"
             alt="Logo"
             className='w-full h-full object-cover'
           />
@@ -17,7 +17,7 @@ const WhoWeAre = () => {
           Namadwaar Singapore is a registered Hindu society inspired by HH Sri Sri Muralidhara Swamiji established since Nov 8 2012 to help promote Universal Love for the betterment of human race without any social , cultural or geographical barriers. 
           <br/>
           <br/>
-          Constant chanting of the Mahamantra in the same location manifests divine presence in that place and spreads positive vibrations of love, harmony and understanding not just within its precincts but everywhere around it. That is the prime reason for the establishment of Namadwaars world over. Prayers done in such precincts are undoubtedly fulfilled.
+          Constant chanting of the Mahamantra in the same location manifests divine presence in that place and spreads positive vibrations of love, harmony and mental peace. This sacred practice not only enriches one spiritually, but also addresses the contemporary challenges faced by humanity. Through its unwavering commitment to Nama Sankirtan, Namadwaar establishments all around the world endeavor to inspire individuals to discover joy and serenity within themselves.
           </p>
       </div>
 
