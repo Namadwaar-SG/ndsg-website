@@ -15,15 +15,12 @@ const UpcomingEvent = ({params}) => {
         <section className='max-container padding-y px-10 max-sm:px-8'>
             <div className='relative'>
                 <h1 className='font-caudex text-4xl max-md:text-2xl max-sm:text-xl font-bold text-center'>{upcomingeventdetails[i].title}</h1>
-                <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 absolute inset-y-0 left-0 max-sm:w-3 max-sm:h-3">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                </svg>
             </div>
         </section>
 
         <section className='flex justify-center px-12 gap-5'>
             {upcomingeventdetails[i].imgURL.map((item) => (
-                <div className='w-1/2 max-md:w-full'>
+                <div className='w-1/3 max-md:w-full'>
                     <img src={item} alt="" />
                 </div>
             ))}
@@ -65,7 +62,7 @@ const UpcomingEvent = ({params}) => {
                     {upcomingeventdetails[i].contactDetails}
                     </p>
             </div>
-            <div className='mt-10'><Button label={upcomingeventdetails[i].buttonContent} type="event"/></div>
+            {/* <div className='mt-10'><Button label={upcomingeventdetails[i].buttonContent} type="event"/></div> */}
         </section>
 
     </main>

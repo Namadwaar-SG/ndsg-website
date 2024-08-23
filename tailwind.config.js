@@ -48,7 +48,7 @@ export default {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage: {
-        'hero': "url('/assets/images/pic4.jpeg')",
+        'hero': "url('/assets/images/pic1.jpeg')",
         'second-hero': "url('/assets/images/pic3.jpeg')",
         'third-hero': "url('/assets/images/bagyaji.jpeg')",
         'background-pastel': "url('/assets/images/background.svg')",

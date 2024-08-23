@@ -3,10 +3,10 @@ import React from 'react'
 const WhoWeAre = () => {
   return (
     <section
-      className="flex flex-row justify-center gap-12"
+      className="flex max-lg:flex-col justify-center gap-12"
     >
-      <div className="hidden lg:block w-2/5" >
-        <img src="/assets/images/whoweare.jpg"
+      <div className="w-2/5 max-lg:w-full" >
+        <img src="/assets/images/WhoWeAre.jpg"
             alt="Logo"
             className='w-full h-full object-cover'
           />
