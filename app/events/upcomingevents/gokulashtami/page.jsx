@@ -16,7 +16,7 @@ const UpcomingEvent = () => {
             </div>
         </section>
 
-        <section className='flex justify-center px-12 gap-5'>
+        <section className='flex justify-center px-12 gap-5 max-md:flex-col'>
             {upcomingeventdetails[i].imgURL.map((item) => (
                 <div className='w-1/3 max-md:w-full'>
                     <img src={item} alt="" />
@@ -28,24 +28,24 @@ const UpcomingEvent = () => {
             <div className='flex flex-row justify-start gap-28 font-caudex'>
                 <div>
                     <h1 className='text-3xl max-sm:text-lg font-semibold'>Date</h1>
-                    <p className='font-palanquin text-left text-black text-xl max-sm:text-[10px] max-sm:leading-7 leading-8'>
+                    <p className='font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8'>
                     {upcomingeventdetails[i].date}
                     </p>
                 </div>
 
                 <div>
                     <h1 className='text-3xl max-sm:text-lg font-semibold'>Time</h1>
-                    <p className='font-palanquin text-left text-black text-xl max-sm:text-[10px] max-sm:leading-7 leading-8'>
+                    <p className='font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8'>
                     {upcomingeventdetails[i].time}
                     </p>
                 </div>
             </div>
             <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
-            <div className='pr-28'>
+            <div className=''>
                 <h1 className='mb-5 font-caudex text-3xl max-sm:text-lg font-semibold'>Details</h1>
                 {lines.map((para,index) => (
                     <div>
-                    <p key={index} className='font-palanquin text-left text-black text-xl max-sm:text-[10px] max-sm:leading-7 leading-8'>
+                    <p key={index} className='font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8'>
                     {para}
                     </p>
                     <br/>
@@ -56,7 +56,7 @@ const UpcomingEvent = () => {
             <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
             <div className='pr-28'>
                 <h1 className='mb-2 font-caudex text-3xl max-sm:text-lg font-semibold'>Contact Information</h1>
-                    <p className='font-palanquin text-left text-black text-xl max-sm:text-[10px] max-sm:leading-7 leading-8'>
+                    <p className='font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8'>
                     {upcomingeventdetails[i].contactDetails}
                     </p>
             </div>
