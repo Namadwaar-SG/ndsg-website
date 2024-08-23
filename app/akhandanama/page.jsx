@@ -27,8 +27,7 @@ const AkhandaNama = () => {
         <section
         className="flex max-lg:flex-col-reverse my-20 max-md:my-0 bg-beige"
         >
-            
-            <div className='text-balance p-20 max-lg:p-12 flex flex-col gap-8 items-center justify-center w-1/2 max-lg:w-full font-palanquin text-center text-black text-lg leading-8 max-sm:text-base max-sm:leading-7'>
+            <div className='text-balance p-20 max-lg:p-8 flex flex-col gap-8 items-center justify-center w-1/2 max-lg:w-full font-palanquin text-center text-black text-lg leading-8 max-sm:text-base max-sm:leading-7'>
                     <p>This is a form of meditation where one has to hold utmost concentration and focus to channelise his thoughts to a positive anchor. The anchor here is the utterance of God’s name, believed to purify one’s mind and dispel negative influences.
                     </p>
                     <p className='font-bold text-primary-maroon'>

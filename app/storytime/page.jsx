@@ -9,7 +9,7 @@ const StoryTime = () => {
             className="mt-12 max-sm:mt-8 flex flex-row max-lg:flex-col gap-24 max-lg:gap-8 max-lg:items-center"
             >
             <div className="w-1/2 max-lg:w-full" >
-                <Image src="/assets/images/pic2.jpeg"
+                <Image src="/assets/images/house4.jpeg"
                     alt="Logo"
                     height={300}
                     width={800}
