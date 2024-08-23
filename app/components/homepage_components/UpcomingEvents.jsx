@@ -24,7 +24,7 @@ const UpcomingEvents = ({props}) => {
                   <div className='mt-3 text-lg leading-7'>Date: 23rd Aug - 1st Sep 2024</div>
                 </div>
                 <div className='p-5'>
-                  <Link href={`/events/upcomingevents/0`}><Button label="More Details" type=""/></Link>
+                  <Link href={`/events/upcomingevents/gokulashtami`}><Button label="More Details" type=""/></Link>
                 </div>
               </div>
             </div>
