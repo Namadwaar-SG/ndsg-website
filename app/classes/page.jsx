@@ -3,6 +3,7 @@ import SectionHeader from '@app/components/common_components/SectionHeader'
 import React, { useState } from 'react'
 import ItihasaClassCard from '@app/components/common_components/ItihasaClassCard'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Classes = () => {
 
@@ -10,22 +11,22 @@ const Classes = () => {
     {
         title: "Srimad Bhagavatham",
         description: "Srimad Bhagavatham, one of the most significant scriptures, holds gems of spiritual knowledge and serves as a pathway to enlightenment in this age. Our classes are designed to help you extract the essence of each verse and practically apply it to the current times. Classes are offered in Tamil & Telugu languages.",
-        day:"Every Sunday",
-        time:"4:30pm - 6:30pm",
+        day:"Wednesday (Telugu), Thursday, Saturday",
+        time:"10:30 - 11:30am | 10:30 - 11:30am | 4:00 - 5:00pm ",
         location:"Serangoon 414, 689590"
     },
     {
         title: "Ramayana",
         description: "Ramayana, a timeless epic in Hinduism, narrates the life of Lord Rama and contains plenty of teachings on Dharma that a human can idealize. In our Ramayana classes, Brahmasri Ravi Teja ji expounds on the various nuances and implications of the text, giving one an open space for discussion. Classes are offered in Tamil language.",
         day:"Every Sunday",
-        time:"4:30pm - 6:30pm",
+        time:"5:00pm - 6:00pm",
         location:"Serangoon 414, 689590"
     },
     {
         title: "Sanskrit",
         description: "We also offer sanskrit classes where Brahmasri Ravi Teja ji teaches basic Sanskrit writing, reading and grammar. Through this, students can gradually build their vocabulary by learning commonly used words and roots (dhatus).",
-        day:"Every Sunday",
-        time:"4:30pm - 6:30pm",
+        day:"Every Saturday",
+        time:"5:00pm - 6:00pm",
         location:"Serangoon 414, 689590"
     }
 
@@ -67,24 +68,28 @@ const Classes = () => {
         <section className='mt-20 max-container py-10'>
             <div className='flex justify-evenly max-sm:items-center max-sm:flex-col px-5 gap-8'>
                 <div className='group overflow-hidden relative w-1/3 aspect-square max-sm:w-5/6  shadow-2xl cursor-pointer'>
-                    <img className='h-full w-full object-cover group-hover:scale-125 transition-transform duration-1000' src="/assets/images/mg2.jpeg"
+                    <Link href='/gopakuteeram'>
+                    <img className='h-full w-full object-cover group-hover:scale-125 transition-transform duration-1000' src="/assets/images/gk.jpg"
                     />  
                     <div className='absolute inset-0 rounded-t-3xl bg-gradient-to-b from-transparent via-transparent via-70% to-primary-maroon to-90% '>
                         <div className='absolute inset-x-0 bottom-0 p-6'>
                             <h1 className='font-caudex font-bold text-white text-center text-xl'>Gopakuteeram</h1>
                         </div>
                     </div>
+                    </Link>
+                    
 
                 </div>
                 <div className='group overflow-hidden relative w-1/3 aspect-square max-sm:w-5/6  shadow-2xl cursor-pointer'>
-                    <img className='h-full w-full object-cover group-hover:scale-125 transition-transform duration-1000' src="/assets/images/mg.jpeg"
-                    />  
-                    <div className='absolute inset-0 rounded-t-3xl bg-gradient-to-b from-transparent via-transparent via-70% to-primary-maroon to-90% '>
-                        <div className='absolute inset-x-0 bottom-0 p-6'>
-                            <h1 className='font-caudex font-bold text-white text-center text-xl'>Yuva Gopakuteeram</h1>
+                    <Link href="/yuvagk">
+                        <img className='h-full w-full object-cover group-hover:scale-125 transition-transform duration-1000' src="/assets/images/yuva.jpg"
+                        />  
+                        <div className='absolute inset-0 rounded-t-3xl bg-gradient-to-b from-transparent via-transparent via-70% to-primary-maroon to-90% '>
+                            <div className='absolute inset-x-0 bottom-0 p-6'>
+                                <h1 className='font-caudex font-bold text-white text-center text-xl'>Yuva Gopakuteeram</h1>
+                            </div>
                         </div>
-                    </div>
-
+                    </Link>
                 </div>
 
             </div>
@@ -113,7 +118,7 @@ const Classes = () => {
                 Join for classes!
             </h1>
             <p className='mt-5 font-inter text-black text-base max-sm:leading-7 leading-8'>
-            You may reach out to Ravi Teja ji @ +65 1234 4567 for enquiries.
+            You may reach out to Brahmasri Ravi Teja ji @ +65 8542 9284 for enquiries.
             </p>
         </section>
     </main>

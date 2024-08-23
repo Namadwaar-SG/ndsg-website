@@ -40,7 +40,7 @@ const Events = () => {
           </div>
         </section>
 
-        <section className='padding-x py-10 mt-20'>
+        <section className='padding-x py-10 mt-20 bg-beige'>
           <UpcomingEvents/>
         </section>
     </main>
