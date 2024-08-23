@@ -55,7 +55,7 @@ const WhatWeDo = () => {
           <Link href='/weeklysatsangh'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/satsang.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="text-lg max-md:text-base max-sm:text-sm">Weekly Satsangh</div>
+              <div className="text-lg">Weekly Satsangh</div>
             </div>
           </Link>
           
@@ -64,7 +64,7 @@ const WhatWeDo = () => {
           <Link href='/housesatsangh'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/house4.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="text-lg max-md:text-base max-sm:text-sm">House Satsangh</div>
+              <div className="text-lg">House Satsangh</div>
             </div>
           </Link>
           
@@ -73,7 +73,7 @@ const WhatWeDo = () => {
           <Link href='/storytime'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="text-lg max-md:text-base max-sm:text-sm">Kadhai Kelu Kadhai Kelu</div>
+              <div className="text-lg">Kadhai Kelu Kadhai Kelu</div>
             </div>
           </Link>
         </div>
@@ -82,7 +82,7 @@ const WhatWeDo = () => {
           <Link href='/storytime'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/pc6.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="text-lg max-md:text-base max-sm:text-sm">Akhanda Nama</div>
+              <div className="text-lg">Akhanda Nama</div>
             </div>
           </Link>
         </div>
@@ -111,7 +111,7 @@ const WhatWeDo = () => {
             <Link href='/classes'>
               <img className="w-full h-3/4 object-cover" src="/assets/images/gk.jpg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
-                <div className="text-lg max-md:text-base max-sm:text-sm">Gopakuteeram</div>
+                <div className="text-lg">Gopakuteeram</div>
               </div>
             </Link>
           </div>
@@ -119,7 +119,7 @@ const WhatWeDo = () => {
             <Link href='/classes'>
               <img className="w-full h-3/4 object-cover" src="/assets/images/pic3.jpeg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
-                <div className="text-lg max-md:text-base max-sm:text-sm">Itihasa/Purana Class</div>
+                <div className="text-lg">Itihasa/Purana Class</div>
               </div>
             </Link>
             
@@ -128,7 +128,7 @@ const WhatWeDo = () => {
             <Link href='/classes'>
               <img className="w-full h-3/4 object-cover" src="/assets/images/yuva.jpg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
-                <div className="text-lg max-md:text-base max-sm:text-sm">Yuva Gopakuteeram</div>
+                <div className="text-lg">Yuva Gopakuteeram</div>
               </div>
             </Link>
             
@@ -146,7 +146,7 @@ const WhatWeDo = () => {
             <Link href={`/events/${eventpics.length-index}`}>
               <img className="w-full h-3/4 object-cover max-lg:h-1/2 max-sm:h-3/4" src={item.imgURL} alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
-                <div className="font-Inter text-lg max-md:text-base max-sm:text-sm">{item.title}</div>
+                <div className="text-lg">{item.title}</div>
               </div>
             </Link>
             

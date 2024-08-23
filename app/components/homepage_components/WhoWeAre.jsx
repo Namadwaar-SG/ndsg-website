@@ -13,7 +13,7 @@ const WhoWeAre = () => {
       </div>
       <div className='flex flex-col items-start justify-start w-3/5 max-lg:w-full max-lg:items-center'>
         <h1 className='font-caudex text-primary-maroon text-4xl max-md:text-3xl max-md:leading-8 font-bold'> Who we are </h1>
-          <p className='font-palanquin max-lg:text-center text-slate-grey text-md max-sm:text-[12px] max-sm:leading-7 leading-8 mt-6 mb-15 pr-14 max-lg:pl-14'>
+          <p className='font-palanquin max-lg:text-center text-slate-grey text-md max-sm:text-base max-sm:leading-7 leading-8 mt-6 mb-15 pr-14 max-lg:px-8'>
           Namadwaar Singapore is a registered Hindu society inspired by HH Sri Sri Muralidhara Swamiji established since Nov 8 2012 to help promote Universal Love for the betterment of human race without any social , cultural or geographical barriers. 
           <br/>
           <br/>
