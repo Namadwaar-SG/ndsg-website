@@ -54,7 +54,7 @@ const UpcomingEvent = () => {
                 ))}
             </div>
             <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
-            <div className='pr-28'>
+            <div className=''>
                 <h1 className='mb-2 font-caudex text-3xl max-sm:text-lg font-semibold'>Contact Information</h1>
                     <p className='font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8'>
                     {upcomingeventdetails[i].contactDetails}
