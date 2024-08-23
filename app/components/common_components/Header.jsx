@@ -90,7 +90,7 @@ const Header = () => {
                            
                             {/* dropdown */}
                             {toggleActivDropdown && (
-                            <div className='absolute bg-primary-maroon text-beige top-10 w-[210px]'>
+                            <div className='absolute bg-primary-maroon text-beige w-[210px]'>
                                 <ul className='shadow-md shadow-beige'>
                                     <li className='p-2 hover:bg-primary-orange'>
                                         <Link href='/weeklysatsangh'>Weekly Satsangh</Link>
@@ -126,7 +126,7 @@ const Header = () => {
                            
                             {/* dropdown */}
                             {toggleClassDropdown && (
-                            <div className='absolute bg-primary-maroon text-beige top-10 left-0 w-[200px]'>
+                            <div className='absolute bg-primary-maroon text-beige left-0 w-[200px]'>
                                 <ul className='shadow-md shadow-beige'>
                                     <li className='p-2 hover:bg-primary-orange'>
                                         <Link href='/gopakuteeram'>Gopa Kuteeram</Link>
@@ -142,16 +142,19 @@ const Header = () => {
                         </li>  
                         
                         <li className='relative' onMouseEnter={handleMouse3}  onMouseLeave={handleMouse3}>
-                            <div className={`p-2 flex justify-between items-center gap-1 ${toggleMediaDropdown? 'bg-primary-maroon text-beige stroke-beige': ''}`}>
+                            <Link href='/newsletter'>
+                                Newsletter
+                            </Link>
+                            {/* <div className={`p-2 flex justify-between items-center gap-1 ${toggleMediaDropdown? 'bg-primary-maroon text-beige stroke-beige': ''}`}>
                                 Media
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 h-4 ${toggleMediaDropdown? "bg-primary-maroon stroke-beige":""}`}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                 </svg>
-                            </div>
+                            </div> */}
                            
                             {/* dropdown */}
-                            {toggleMediaDropdown && (
-                            <div className='absolute bg-primary-maroon text-beige top-10 left-0 w-[200px]'>
+                            {/* {toggleMediaDropdown && (
+                            <div className='absolute bg-primary-maroon text-beige left-0 w-[200px]'>
                                 <ul className='shadow-md shadow-beige'>
                                     <li className='p-2 hover:bg-primary-orange'>
                                         <Link href='/gallery'>Gallery</Link>
@@ -161,7 +164,7 @@ const Header = () => {
                                     </li>
                                    
                                 </ul>
-                            </div>)}
+                            </div>)} */}
                         </li>  
 
                     

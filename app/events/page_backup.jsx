@@ -20,12 +20,12 @@ const Events = () => {
         </section>
 
         <section>
-          <div className='mx-5 max-sm:mx-20 grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 justify-center gap-5'>
+          <div className='mx-5 max-sm:mx-20 grid max-sm:grid-cols-1 max-md:grid-cols-2 grid-cols-3 justify-center gap-5'>
             {eventpics.map((item, index) => (
                 
                   <div className='group relative overflow-hidden cursor-pointer'>
                     <Link href={`/events/${index}`}>
-                      <img className='w-full aspect-[6/5] object-cover group-hover:scale-125 transition-transform duration-1000' src={item.imgURL}
+                      <img className='object-cover group-hover:scale-125 transition-transform duration-1000' src={item.imgURL}
                       />                
                       <div className='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black '>
                         <div className='absolute inset-0 flex flex-col items-center justify-end p-5 text-center'>

@@ -29,8 +29,9 @@ const YuvaGK = () => {
     <main>
       <SectionHeader sectionLabel="Yuva Gopakuteeram"/>
       <section className="px-48 max-md:px-12 mt-16 max-container">
-            <p className='font-palanquin text-center text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
-            Suspendisse mattis fringilla lorem, ut pharetra est luctus eget. Nulla in porttitor arcu. Vestibulum enim eros, consectetur ut ultrices ac, convallis vitae augue. Nulla fringilla urna et viverra congue. Aliquam cursus, massa quis interdum pellentesque, ligula turpis vehicula nisl, non egestas odio sapien eget nisl. Nullam ac dapibus nulla. Maecenas in felis enim. Morbi velit turpis, luctus a dui eget, cursus feugiat ipsum. Aenean a porta leo.
+            <p className='font-palanquin text-center text-balance text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
+            <strong>Yuva Gopakuteeram</strong> has been launched recently to provide the youth a platform to discuss <span className='underlined decoration-solid'> modern science, coupled with ancient wisdom</span>. Sessions are led by industry-experienced professionals who are also well-versed in the applications of Hindu wisdom in various aspects of today's world. This will give youth an opportunity to have meaningful discussions about modern technology and 
+            <span className='underlined decoration-solid'> finding a middle ground between modern advancements and traditional values </span>, fostering a holistic understanding that integrates the best of both worlds. 
             </p>
         </section>
         <section className='mt-12 flex flex-row max-md:flex-col justify-center items-center gap-12 p-8'>
@@ -45,7 +46,7 @@ const YuvaGK = () => {
                         width={600}
                     />
         </section>
-        {yuvaSessions.length > 0 && (
+        {/* {yuvaSessions.length > 0 && (
         <section className='bg-white mt-12 max-sm:mt-8 py-12 px-16'>
             <h1 className='font-caudex text-4xl max-md:text-3xl max-md:leading-8 font-bold text-center mb-16 text-primary-maroon'>Upcoming Sessions</h1>
             <div className='flex flex-col gap-12'>
@@ -66,7 +67,7 @@ const YuvaGK = () => {
                 ))}
             </div>
         </section>
-        )}
+        )} */}
     </main>
   )
 }

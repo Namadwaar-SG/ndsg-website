@@ -52,6 +52,7 @@ export default {
         'second-hero': "url('/assets/images/pic3.jpeg')",
         'third-hero': "url('/assets/images/bagyaji.jpeg')",
         'background-pastel': "url('/assets/images/background.svg')",
+        'massprayer': "url('/assets/images/chant.jpg')",
       },
       screens: {
         "wide": "1440px"

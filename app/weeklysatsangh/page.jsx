@@ -6,49 +6,70 @@ const WeeklySatsangh = () => {
   return (
     <main>
         <SectionHeader sectionLabel="Weekly Satsangh"/>
-        <div className='padding-y px-10 max-sm:p-8'>
-            <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8 mt-6 mr-14 max-sm:m-0'>
-            Suspendisse mattis fringilla lorem, ut pharetra est luctus eget. Nulla in porttitor arcu. Vestibulum enim eros, consectetur ut ultrices ac, convallis vitae augue. Nulla fringilla urna et viverra congue. Aliquam cursus, massa quis interdum pellentesque, ligula turpis vehicula nisl, non egestas odio sapien eget nisl. Nullam ac dapibus nulla. Maecenas in felis enim. Morbi velit turpis, luctus a dui eget, cursus feugiat ipsum. Aenean a porta leo.            </p>
-        </div>
 
-        <div className='px-10 max-sm:p-8'>
+        <section
+        className="flex flex-row max-lg:flex-col-reverse justify-center gap-8 px-12 my-20 max-lg:my-12 "
+        >
+            <div className='text-balance p-12 max-sm:p-0 flex flex-col items-center justify-center w-1/2 max-lg:w-full font-palanquin text-center text-black text-lg leading-8 max-sm:text-base max-sm:leading-7'>
+                    <p className='font-bold text-primary-maroon'>Join us every Saturday evening <br /> from <span className='underlined decoration-solid'>5:30 pm to 8:30 pm</span> for our weekly satsanghs. </p>
+                    <br />
+                    <p className=''>Experience the joy of singing Madhuragitams, engaging in Namasankirtan, and enlightening discourses on Srimad Bhagavatham by Brahmasri Ravi Teja ji. Each satsang concludes with meditation, a collective prayer, and harathi. </p>
+                    <br />
+                    <p className=''>All are warmly invited to participate and benefit from the boundless grace of the Divine!</p>
+            </div>
+            <div className="w-1/2 max-lg:w-full flex max-lg:h-[300px]" >
+                <img src="/assets/images/pc6.jpeg"
+                    alt="Satsangh"
+                    className='object-cover'
+                />
+            </div>
+        </section>
+        
+       
+        <section className='px-48 padding-y max-lg:p-12 text-center bg-beige mt-12'>
             <h1 className='font-caudex text-4xl max-md:text-3xl max-md:leading-8 font-bold text-primary-maroon'>Why Satsangh?</h1>
-            <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8 mt-6 mr-14 max-sm:mr-8'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et pretium nibh. Phasellus eleifend id sem ac porttitor. Sed interdum nec justo volutpat mattis. Mauris interdum ante ante. Sed sed odio a quam consectetur dapibus eu sed nunc. In tristique velit in lorem vestibulum, non ultrices lectus imperdiet. Suspendisse aliquam et neque quis euismod.
-            </p>
-        </div>
+            <div className='font-palanquin text-black text-lg max-sm:text-base max-sm:leading-7 leading-8 mt-6'>
+                <p className='text-balance'>
+                <span className='font-bold'>Satsangh, meaning "company of the Truth"</span> or noble company, holds profound transformative power as emphasized in our scriptures. Just as a few moments in the company of Narada Muni transformed the immoral hunter Ratnakar into the revered sage Valmiki, illustrating the profound impact of associating with the righteous.
+                In satsangh, the <span className='underlined decoration-solid'>collective potency of prayer and meditation multiplies </span>, swiftly bringing positive changes into our lives.
+                </p>
+                <br/>
+                <p className='text-balance'>
+                Moreover, <span className='underlined decoration-solid'>chanting the Divine Names </span> aloud not only benefits the individual but also purifies both the chanter and the listener, as well as the very environment - <span className='italic underlined decoration-wavy'>Shrotrunapipunati cha </span>- as the scriptures attest. It is our heartfelt aspiration that everyone worldwide experiences the uplifting joy of namasankirtan and satsang.
+                </p>
+            </div>
+        </section>
 
-        <div className='max-container padding-y px-10 max-sm:p-8'>
-            <section className='flex flex-row max-sm:flex-col gap-10 justify-between'>
-                <div className='w-1/2 max-sm:w-full flex flex-col gap-10'>
-                    <div className=''>
+        <section className='px-24 padding-y max-md:px-12'>
+                <div className='flex flex-col gap-10'>
+                    <div>
                         <h1 className='font-caudex text-3xl max-sm:text-lg font-bold text-primary-maroon'>
                             Session Information
                         </h1>
                         {/* fix the padding for bulletin */}
-                        <ul className='px-5 font-palanquin text-black list-disc text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
+                        <ul className='mt-2 px-5 font-palanquin text-black list-disc text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                             <li> Madhurageetham Singing</li>
-                            <li>Namasankeertan & Meditation</li>
-                            <li>Discourse - stories from Srimad Bhagavatam, by Brahmasri Ravi Teja</li>
+                            <li>Namasankirtan & Meditation</li>
+                            <li>Discourse - stories from Srimad Bhagavatam, by Brahmasri Ravi Teja ji</li>
                             <li>Mass Prayer</li>
                             <li>Harathi</li>
                         </ul>
                     </div>
 
-                    <div className=''>
+                    <div>
                         <h1 className='font-caudex text-3xl max-sm:text-lg font-bold text-primary-maroon'>
                             Schedule
                         </h1>
-                        <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
+                        <p className='mt-2 font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                             Every Saturday. From 6:00pm to 7:00pm (SGT)
                         </p>
                     </div>
 
-                    <div className=''>
+                    <div>
                         <h1 className='font-caudex text-3xl max-sm:text-lg font-bold text-primary-maroon'>
                             Location
                         </h1>
-                        <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
+                        <p className='mt-2 font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                         Namadwaar Singapore
                         448 Serangoon Road, #02 – 01
                         <br/>
@@ -57,9 +78,8 @@ const WeeklySatsangh = () => {
                     </div>
                     
                 </div>
-            </section>
 
-        </div>
+        </section>
         
     </main>
   )
