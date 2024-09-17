@@ -12,7 +12,7 @@ const AkhandaNama = () => {
         >
             <div className="w-1/2 max-lg:w-full max-lg:h-[400px] flex" >
                 <img src="/assets/images/satsang.jpeg"
-                    alt="Satsangh"
+                    alt="Satsang"
                     className='object-cover'
                 />
             </div>

@@ -50,7 +50,7 @@ export const eventpics = [
         imgURL: '/assets/images/jananiji.jpg',
         carouselpics: ['/assets/images/jananiji.jpg', '/assets/images/jananiji2.jpeg', '/assets/images/jananiji3.jpeg', '/assets/images/jananiji4.jpeg'],
         title:'Dr Jananiji Visit',
-        content: ['Dr Jananiji’s visit to Singapore was full of interesting talks, satsanghs, fun filled outings and programmes for both youngsters and adults. With soul melting topics from Leelanubhavam and an introduction to the Bala Kanda of Ramacharitmanas, her talks tugged at the hearstrings of all. Dr Jananiji led 2 enriching programmes for Gopakuteeram children on the topics of FOMO to JOMO and building bridges. Satsanghs with her were concluded by a grand Sita Kalayanam at Namadwaar Singapore.'],
+        content: ['Dr Jananiji’s visit to Singapore was full of interesting talks, satsangs, fun filled outings and programmes for both youngsters and adults. With soul melting topics from Leelanubhavam and an introduction to the Bala Kanda of Ramacharitmanas, her talks tugged at the hearstrings of all. Dr Jananiji led 2 enriching programmes for Gopakuteeram children on the topics of FOMO to JOMO and building bridges. Satsangs with her were concluded by a grand Sita Kalayanam at Namadwaar Singapore.'],
         date: '27th April - 5th May, 2024'
     },
     {
@@ -62,7 +62,7 @@ export const eventpics = [
     },
 ];
 
-// Image carousel in House Satsangh and Event example
+// Image carousel in House Satsang and Event example
 export const carouselpics = [
     {
         imgURL: '/assets/images/mg.jpeg',

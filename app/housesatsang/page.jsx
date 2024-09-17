@@ -6,17 +6,17 @@ import { carouselpics } from '@constants/fixed';
 import Image from 'next/image';
 
 
-const HouseSatsangh = () => {
+const HouseSatsang = () => {
   return (
     <main>
-        <SectionHeader sectionLabel="House Satsangh"/>
+        <SectionHeader sectionLabel="House Satsang"/>
 
         <section className='px-48 max-md:px-12 padding-y flex flex-col justify-center items-center gap-12'>
             <p className='text-balance font-palanquin text-center text-black text-lg max-sm:text-base max-sm:leading-7 leading-8 '>
-            Introducing our recent initiative, <strong>House Satsangh</strong> where the <span className='underlined decoration-solid'>sacred vibrations of Namasankirtan and enlightening discourses come directly to your doorstep.</span> This service is offered completely free of charge, reflecting our commitment to spreading spiritual harmony and joy without any financial obligation. You don’t need to worry about preparing meals; a simple offering of milk and a few dry fruits for the deity suffices.
+            Introducing our recent initiative, <strong>House Satsang</strong> where the <span className='underlined decoration-solid'>sacred vibrations of Namasankirtan and enlightening discourses come directly to your doorstep.</span> This Seva is done for the sake of peace, harmony and joy in the homes of the devotees who host these Satsangs. The sole focus is prayer and chanting of the Mahamantra and does not involve any monetary or ritualistic commitment. You don’t need to worry about preparing meals; a simple offering of milk and a few dry fruits for the deity suffices.
             </p>
             <p className='text-balance font-palanquin text-center text-black text-lg max-sm:text-base max-sm:leading-7 leading-8 '>
-            At House Satsangh, we bring the essence of satsangh — <span className='italic underlined decoration-wavy'>meaningful spiritual company</span> — into the comfort of your home. Whether for an hour or longer, our dedicated team conducts soul-enriching sessions filled with chanting and short discourses, tailored to your preference. You get to experience an atmosphere of peace, reflection, and spiritual growth right where you live.
+            At House Satsang, we bring the essence of satsang — <span className='italic underlined decoration-wavy'>meaningful spiritual company</span> — into the comfort of your home. Whether for an hour or longer, our dedicated team conducts soul-enriching sessions filled with chanting and short discourses, tailored to your preference. You get to experience an atmosphere of peace, reflection, and spiritual growth right where you live.
             </p>
             <p className='text-balance font-palanquin text-center font-bold text-primary-maroon text-lg max-sm:text-base max-sm:leading-7 leading-8 '>
             Embrace this opportunity to elevate your spiritual journey with the power of collective prayer and meditation in your own space.
@@ -41,7 +41,7 @@ const HouseSatsangh = () => {
                 <p className='mt-6 font-palanquin text-left text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                 Here's what a standard one-hour session might look like:</p>
                 <ul className='mt-4 pl-5 list-disc font-palanquin text-left text-lg max-sm:text-base max-sm:leading-7 leading-8'>
-                  <li>First 30 minutes: Pravachan on Srimad Bhagavadam or Kalidharma undhiyar</li>
+                  <li>First 30 minutes: Pravachan on Srimad bhagavatam or Kalidharma undhiyar</li>
                   <li>Next 20 minutes: Nama chanting</li>
                   <li>Next 5 minutes: Prayer specifically for the host</li>
                   <li>Last 5 minutes: Harathi and Prasad offering</li>
@@ -63,4 +63,4 @@ const HouseSatsangh = () => {
   )
 }
 
-export default HouseSatsangh
+export default HouseSatsang

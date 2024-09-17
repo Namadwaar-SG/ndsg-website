@@ -9,8 +9,8 @@ const Classes = () => {
 
   const itihasaList = [
     {
-        title: "Srimad Bhagavatham",
-        description: "Srimad Bhagavatham, one of the most significant scriptures, holds gems of spiritual knowledge and serves as a pathway to enlightenment in this age. Our classes are designed to help you extract the essence of each verse and practically apply it to the current times. Classes are offered in Tamil & Telugu languages.",
+        title: "Srimad bhagavatam",
+        description: "Srimad bhagavatam, one of the most significant scriptures, holds gems of spiritual knowledge and serves as a pathway to enlightenment in this age. Our classes are designed to help you extract the essence of each verse and practically apply it to the current times. Classes are offered in Tamil & Telugu languages.",
         day:"Wednesday (Telugu), Thursday, Saturday",
         time:"10:30 - 11:30am | 10:30 - 11:30am | 4:00 - 5:00pm ",
         location:"Serangoon 414, 689590"
@@ -39,7 +39,7 @@ const Classes = () => {
           <div className='padding-y px-48 max-lg:p-10 font-palanquin text-center text-balance text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
               <p className=''>
               Namadwaar Singapore is dedicated to upholding and propagating the principles set forth in the ancient Indian scriptures. 
-              To serve this purpose, we offer various <span className='underlined decoration-solid'>Ithihasa/Purana classes </span>such as <strong> Srimad Bhagavatam, Srimad Ramayana and Sanskrit </strong>.  These classes are aimed at those interested in deepening their understanding and practice of the teachings from these texts.
+              To serve this purpose, we offer various <span className='underlined decoration-solid'>Ithihasa/Purana classes </span>such as <strong> Srimad bhagavatam, Srimad Ramayana and Sanskrit </strong>.  These classes are aimed at those interested in deepening their understanding and practice of the teachings from these texts.
               </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ const Classes = () => {
             <h1 className='text-center font-caudex font-bold text-4xl max-md:text-2xl max-md:leading-8 px-16 text-primary-maroon'>Itihasa and Purana Classes</h1>
             <div className='mt-8 flex flex-col items-center gap-4 px-48 max-md:px-10  font-palanquin text-center text-balance text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
                 <p>
-                Our Puranic classes at Namadwaar, both <strong>Srimad Bhagavatham and Ramayana</strong> strive to deepen one's understanding of the <span className='underlined decoration-solid'>philosophy, theology, and spiritual wisdom</span> embedded in its verses. 
+                Our Puranic classes at Namadwaar, both <strong>Srimad bhagavatam and Ramayana</strong> strive to deepen one's understanding of the <span className='underlined decoration-solid'>philosophy, theology, and spiritual wisdom</span> embedded in its verses. 
                 </p>
                 <p>
                 They typically begin with a recitation of selected verses, followed by a detailed explanation of their meaning, context, and significance while also picking up basic Sanskrit words. 

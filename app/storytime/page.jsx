@@ -9,7 +9,7 @@ const StoryTime = () => {
             className="mt-12 max-sm:mt-8 flex flex-row max-lg:flex-col gap-24 max-lg:gap-8 max-lg:items-center"
             >
             <div className="w-1/2 max-lg:w-full" >
-                <Image src="/assets/images/house4.jpeg"
+                <Image src="/assets/images/pic3.jpeg"
                     alt="Logo"
                     height={300}
                     width={800}
@@ -24,7 +24,7 @@ const StoryTime = () => {
                 </p>
                 <br />
                 <p className='font-palanquin text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
-                Set in the backdrop of Parikshit as he absorbs wisdom from Saint Shuka in the purest and most earnest ways, we too get to enjoy the stories of Srimad Bhagavatam through this series.
+                Srimad Bhagavatam is considered to be the crest jewel among the 18 puranas bestowed by Sri Veda Vyasa. Reading of and listening to this grantha is said to bestow a spiritual seeker with wisdom, devotion and dispassion.
                 </p>
                 
             </div>
@@ -38,10 +38,10 @@ const StoryTime = () => {
                 Sri Swamiji says, the <span className='underlined decoration-solid'>easiest way to attain bhakti and subsequently liberation</span> is by listening to these stories. Earnest listening to stories of bhagavan is hailed as most profound. 
                 <br/>
                 <br/>
-                Great sadhus and saints of pure Sattva quality (devoid of jealousy, ego and anger) yearn to listen to such stories, for it purifies the heart. King Parikshit is celebrated for his utmost focus, reverence and dedication with which he listened and savored the divine Srimad Bhagavatam. <span className='underlined decoration-solid'>Through this alone he was able to attain the Lord</span>, showing the significance of simply listening.
+                Great sadhus and saints of pure Sattva quality (devoid of jealousy, ego and anger) yearn to listen to such stories, for it purifies the heart. King Parikshit is celebrated for his utmost focus, reverence and dedication with which he listened and savored the divine Srimad bhagavatam. <span className='underlined decoration-solid'>Through this alone he was able to attain the Lord</span>, showing the significance of simply listening.
                 <br />
                 <br />
-                Hearing stories merely enhances our intellect, but truly listening to Srimad Bhagavatham and allowing it to touch our hearts is called <span className='underlined decoration-wavy font-bold'>Shravanam.</span> This is truly an egoless state. A state that facilitates inner transformation, one that leads us to the almighty.
+                Hearing stories merely enhances our intellect, but truly listening to Srimad bhagavatam and allowing it to touch our hearts is called <span className='underlined decoration-wavy font-bold'>Shravanam.</span> This is truly an egoless state. A state that facilitates inner transformation, one that leads us to the almighty.
                 </p>
             </div>
         </section>

@@ -55,7 +55,7 @@ const EventExample = ({params}) => {
                 <ul className='px-5 py-3 font-palanquin list-disc text-lg max-sm:text-[10px] max-sm:leading-7 leading-8'>
                     <li> Madhurageetham Singing</li>
                     <li>Namasankeertan & Meditation</li>
-                    <li>Discourse - stories from Srimad Bhagavatam, by Brahmasri Ravi Teja ji</li>
+                    <li>Discourse - stories from Srimad bhagavatam, by Brahmasri Ravi Teja ji</li>
                     <li>Mass Prayer</li>
                     <li>Harathi</li>
                 </ul>
