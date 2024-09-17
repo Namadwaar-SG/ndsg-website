@@ -93,10 +93,10 @@ const Header = () => {
                             <div className='absolute bg-primary-maroon text-beige w-[210px]'>
                                 <ul className='shadow-md shadow-beige'>
                                     <li className='p-2 hover:bg-primary-orange'>
-                                        <Link href='/weeklysatsangh'>Weekly Satsangh</Link>
+                                        <Link href='/weeklysatsang'>Weekly Satsang</Link>
                                     </li>
                                     <li className='p-2  hover:bg-primary-orange'>
-                                        <Link href='/housesatsangh'>House Satsangh</Link>
+                                        <Link href='/housesatsang'>House Satsang</Link>
                                     </li>
                                     <li className='p-2 hover:bg-primary-orange'>
                                         <Link href='/storytime'>Kadhai Kelu Kadhai Kelu</Link>
@@ -215,8 +215,8 @@ const Header = () => {
                     </div>
                     {toggleActivDropdown && (
                         <ul onClick={() => {handleNavMenu(); setActivDropdown();}}>
-                            <li className='px-12 py-3'><Link href='/weeklysatsangh'>Weekly Satsangh</Link></li>
-                            <li className='px-12 py-3'><Link href='/housesatsangh'>House Satsangh</Link></li>
+                            <li className='px-12 py-3'><Link href='/weeklysatsang'>Weekly Satsang</Link></li>
+                            <li className='px-12 py-3'><Link href='/housesatsang'>House Satsang</Link></li>
                             <li className='px-12 py-3'><Link href='/storytime'>Kadhai Kelu Kadhai Kelu</Link></li>
                             <li className='px-12 pt-3'><Link href='/akhandanama'>Akhanda Nama</Link></li>
                         </ul>

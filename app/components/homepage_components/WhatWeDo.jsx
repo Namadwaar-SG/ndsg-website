@@ -7,7 +7,7 @@ import { eventpics } from '@constants/fixed'
 import Link from 'next/link';
 
 const WhatWeDo = () => {
-  const lastThree = eventpics.slice(-3).reverse();
+  const recentThree = eventpics.slice(0,3);
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1070 },
@@ -52,19 +52,19 @@ const WhatWeDo = () => {
       className='font-palanquin'
       >
         <div className="aboutpagecards">
-          <Link href='/weeklysatsangh'>
+          <Link href='/weeklysatsang'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/satsang.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="text-lg">Weekly Satsangh</div>
+              <div className="text-lg">Weekly Satsang</div>
             </div>
           </Link>
           
         </div>
         <div className="aboutpagecards">
-          <Link href='/housesatsangh'>
+          <Link href='/housesatsang'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/house4.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="text-lg">House Satsangh</div>
+              <div className="text-lg">House Satsang</div>
             </div>
           </Link>
           
@@ -79,7 +79,7 @@ const WhatWeDo = () => {
         </div>
 
         <div className="aboutpagecards">
-          <Link href='/storytime'>
+          <Link href='/akhandanama'>
             <img className="w-full h-4/5 object-cover" src="/assets/images/pc6.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
               <div className="text-lg">Akhanda Nama</div>
@@ -97,7 +97,7 @@ const WhatWeDo = () => {
         <Carousel responsive={responsive}
         swipeable={false}
         draggable={false}
-        showDots={true}
+        showDots={false}
         ssr={true} // means to render carousel on server-side.
         keyBoardControl={true}
         customTransition="transform 500ms ease-in-out"
@@ -108,7 +108,7 @@ const WhatWeDo = () => {
         className='font-palanquin '
         > 
           <div className="aboutpagecards">
-            <Link href='/classes'>
+            <Link href='/gopakuteeram'>
               <img className="w-full h-3/4 object-cover" src="/assets/images/gk.jpg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
                 <div className="text-lg">Gopakuteeram</div>
@@ -125,7 +125,7 @@ const WhatWeDo = () => {
             
           </div>
           <div className="aboutpagecards">
-            <Link href='/classes'>
+            <Link href='/yuvagk'>
               <img className="w-full h-3/4 object-cover" src="/assets/images/yuva.jpg" alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
                 <div className="text-lg">Yuva Gopakuteeram</div>
@@ -140,11 +140,24 @@ const WhatWeDo = () => {
       <h2 className='activities text-primary-maroon font-caudex text-2xl max-md:text-xl max-sm:text-lg'>Events</h2>
       </div>
       
-      <div className="font-palanquin relative flex flex-row max-sm:flex-col justify-center max-sm:items-center gap-5">
-        {lastThree.map((item,index) => (
-          <div key={index} className="w-1/3 rounded overflow-hidden shadow-lg max-sm:w-3/4">
-            <Link href={`/events/${eventpics.length-index}`}>
-              <img className="w-full h-3/4 object-cover max-lg:h-1/2 max-sm:h-3/4" src={item.imgURL} alt="Sunset in the mountains"/>
+      <Carousel responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        showDots={false}
+        ssr={true} // means to render carousel on server-side.
+        keyBoardControl={true}
+        customTransition="transform 500ms ease-in-out"
+        transitionDuration={1000}
+        containerClass="carousel-container"
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-20-px"
+        className='font-palanquin '
+        > 
+      
+        {recentThree.map((item,index) => (
+          <div key={index} className="aboutpagecards">
+            <Link href={`/events/${index}`}>
+              <img className="w-full h-3/4 object-cover" src={item.imgURL} alt="Sunset in the mountains"/>
               <div className="px-6 py-4">
                 <div className="text-lg">{item.title}</div>
               </div>
@@ -153,7 +166,7 @@ const WhatWeDo = () => {
         </div>
         ))
         }
-      </div>
+      </Carousel>
 
       <div className='ml-auto max-sm:max-container'>
         <Link href='/events'><Button label="Read More" type=""/></Link>

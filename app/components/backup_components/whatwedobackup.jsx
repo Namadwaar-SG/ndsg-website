@@ -20,19 +20,19 @@ const WhatWeDo = () => {
       
       <div className="relative flex flex-row max-sm:flex-col justify-center max-sm:items-center gap-5">
         <div className="w-1/3 rounded overflow-hidden shadow-lg max-sm:w-3/4">
-          <Link href='/weeklysatsangh'>
+          <Link href='/weeklysatsang'>
             <img className="w-full h-3/4 object-cover" src="/assets/images/pic1.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="font-Inter text-lg max-md:text-base max-sm:text-sm">Weekly Satsangh</div>
+              <div className="font-Inter text-lg max-md:text-base max-sm:text-sm">Weekly Satsang</div>
             </div>
           </Link>
           
         </div>
         <div className="w-1/3 rounded overflow-hidden shadow-lg max-sm:w-3/4">
-          <Link href='/housesatsangh'>
+          <Link href='/housesatsang'>
             <img className="w-full h-3/4 object-cover" src="/assets/images/pic2.jpeg" alt="Sunset in the mountains"/>
             <div className="px-6 py-4">
-              <div className="font-Inter text-lg max-md:text-base max-sm:text-sm">House Satsangh</div>
+              <div className="font-Inter text-lg max-md:text-base max-sm:text-sm">House Satsang</div>
             </div>
           </Link>
           

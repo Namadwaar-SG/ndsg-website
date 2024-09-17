@@ -11,16 +11,8 @@ const Gopakuteeram = () => {
         The term <b>‘Gopa Kuteeram’</b> in Sanskrit refers to the play-house of young Lord Krishna and the Gopas, his playmates of Vrindavan. Hence, <b>‘Gopa Kuteeram’</b> signifies a place where children have enormous fun along with and in the presence of the Lord.
         <br/>
         <br/>
-        Our Gopa Kuteeram is a children’s life enrichment program that is conducted under the guidance of our master  HH Sri Sri Muralidhara Swamiji.  Our swamiji says: 
-        </p>
-
-        <blockquote className="mx-8 my-12 px-4 border-s-4 border-gray-300 bg-gray-100">
-            <p className="text-xl font-caudex font-medium leading-10 text-primary-blue max-sm:text-[12px] max-sm:leading-7">
-            righteous virtues , seeds of bhakthi and moral values must be sown in the young minds as they tend to grap them very quickly and retain them forever.
-            </p>
-        </blockquote>
-        <p className='font-palanquin text-left text-black text-lg max-sm:text-[12px] max-sm:leading-7 leading-8'>
-        Hence, this Gopa kuteeram is our initiative to impart cultural, traditional and moral values to the children of age between 3- 15 through a structured syllabus , laced with devotion in a fun filled interactive environment
+        Our Gopa Kuteeram is a children’s life enrichment program that is conducted under the guidance of our master  HH Sri Sri Muralidhara Swamiji.
+        It is an initiative to impart cultural, traditional and moral values to the children of age between 3- 15 through a structured syllabus, laced with devotion in a fun filled interactive environment
         </p>
       </section>
       <section className='mt-20 max-sm:mt-8'>
@@ -28,15 +20,11 @@ const Gopakuteeram = () => {
              <div className='py-36 max-md:py-16 flex flex-col gap-8 justify-center items-start px-16 w-1/2 h-full whitespace-normal bg-dark-red bg-opacity-75 max-lg:w-full'>
                 <h1 className='font-caudex text-beige text-4xl max-md:text-3xl max-md:leading-8 max-sm:text-2xl font-bold'>What you'll learn:</h1>
                 <ul className='pl-6 flex flex-col gap-6 font-palanquin text-beige text-xl max-md:text-lg max-md:leading-8 max-sm:text-sm list-disc'>
-                    <li>Small slokas on Ganesha, Hanuman,
-                        Muruga, Krishna and more
+                    <li>Slokas on various deities, and for different occasions
                     </li>
                     <li>Exciting stories from the scriptures 
                     </li>
                     <li>Madhurageetham and Namavalis
-                    </li>
-                    <li>Ashtakams such as Madhurashtakam,
-                    Guruashtakam, and more
                     </li>
                     <li>Skits and drama to reenact stories</li>
                     <li>Dance and music as a way to express spirituality and religion</li>
@@ -49,10 +37,10 @@ const Gopakuteeram = () => {
             <div className='flex flex-row max-md:flex-col-reverse '>
                 <div className='bg-white w-1/2 px-44 max-lg:p-12 max-md:w-full flex flex-col justify-center items-center text-center font-palanquin text-lg'>
                         <p className=''>
-                        Every year GK annual day is celebrated where our kids perform skits, dance and music, duly trained by our GK teachers and parent volunteers
+                        Every year, the Gopa Kuteeram Annual Day is celebrated where our kids perform skits, dance and music, duly trained by our dedicated teachers and parent volunteers
                         </p>
-                        <p className='font-bold mt-8'>
-                        Enrol your children in our GK classes today.
+                        <p className='font-bold mt-8 text-balance'>
+                        Enrol your children in our Gopa Kuteeram classes today.
                         </p>
                 </div>
                 <div className='w-1/2 max-md:w-full'>

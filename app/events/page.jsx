@@ -14,7 +14,7 @@ const Events = () => {
               <p>
               Namadwaar Singapore organizes a variety of events throughout a year such as contests, community events, and celebrations during festive occasions, bringing people together in a close-knit space. 
               </p>
-              <p>These include the annual <strong> Madhurageetham Music Contest, Gopakuteeram Annual Day, </strong> which have garnered immense interest from the local community in Singapore over the past 8 years. Our celebrations of Gokulashtami, Rama Navami, leave people with warm hearts after gathering for a <span className='underlined decoration-solid'> blissful evening of song, chant and dance! </span>
+              <p>These include the annual <strong> Madhurageetham Music Contest, Gopakuteeram Annual Day, </strong> which have garnered immense interest from the local community in Singapore over the past 8 years. Our celebrations of utsavs leave people with warm hearts after gathering for a <span className='underlined decoration-solid'> blissful evening of song, chant and dance! </span>
               </p>
           </div>
         </section>

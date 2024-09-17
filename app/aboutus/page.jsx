@@ -8,10 +8,10 @@ const AboutUs = () => {
         <section className="px-48 max-md:px-12 mt-16 max-container">
             <p className='font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
 
-                Namadwaar Singapore, founded in November 2012, is a cherished branch of the Global Organization for Divinity (GOD), standing as a testament to the transformative power of Nama Sankirtan guided by the blessings of His Holiness Sri Sri Muralidhara Swamiji and the initiative of devotees from Chaitanya Mahaprabhu Nama Bhiksha Kendra. Rooted in the timeless wisdom of the Vedas, Namadwaar Singapore embraces the universal practice of chanting the Maha Mantra as a gateway to inner peace, prosperity, and universal brotherhood.
+                Namadwaar Singapore, founded in November 2012, is a cherished branch of the Global Organization for Divinity (GOD), standing as a testament to the transformative power of Nama Sankirtan guided by the blessings of HH Maharanyam Sri Sri Muralidhara Swamiji and the initiative of devotees from Chaitanya Mahaprabhu Nama Bhiksha Kendra. Rooted in the timeless wisdom of the Vedas, Namadwaar Singapore embraces the universal practice of chanting the Maha Mantra as a gateway to inner peace, prosperity, and universal brotherhood.
                 <br/>
                 <br/>
-                Founded on the principle that Nama Kirtan is the quintessential path of devotion in the current age, Namadwaar Singapore tirelessly promotes the chanting of the divine names of God, particularly the Maha Mantra:
+                Founded on the principle that Nama Kirtan is the quintessential path of devotion in the current age, Namadwaar Singapore relentlessly promotes the chanting of the divine names of God, particularly the Maha Mantra:
             </p>
             <blockquote className="mx-2 my-12 px-4 border-s-4 border-gray-300 bg-gray-100">
                 <p className="text-xl text-center font-caudex font-medium leading-10 text-primary-blue max-sm:text-[10px] max-sm:leading-7">
