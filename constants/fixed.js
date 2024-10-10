@@ -10,19 +10,18 @@ export const navLinks = [
 
 // Upcoming events
 export const upcomingeventdetails = [
-    {
-        imgURL: ['/assets/images/gokul_1.png', '/assets/images/gokul_2.png', '/assets/images/gokul_3.png'],
-        title:'Gokulashtami, Brahmotsavam 2024',
-        date: '23rd Aug - 1st Sep',
-        time: 'Variable timings',
-        details: `The auspiscious event of Gokulashtami Brahmotsavam will take place from 26th to 31st August 2024 (Swasthisri Krodhi varsha), with Bhagavatha Paarayanam starting from 23rd August.
-        We are delighted to extend a warm invite to blissful series of celebrations.
-        We request one and all to kindly come and participate in this divine event, enjoy the kathAshravanam, nAmasankIrtanam, utsava vaibhavam, cultural performances and attain the blessings of Sri Madhurisakhi sametha Sri Premikavaradhan as well as Sri Swamiji.`,
-        buttonContent: "More Details",
-        contactDetails: "You may reach out to Mr Arvind Ramaswami @ +65 9384 5470 for enquiries."
+    // {
+    //     imgURL: ['/assets/images/gokul_1.png', '/assets/images/gokul_2.png', '/assets/images/gokul_3.png'],
+    //     title:'Gokulashtami, Brahmotsavam 2024',
+    //     date: '23rd Aug - 1st Sep',
+    //     time: 'Variable timings',
+    //     details: `The auspiscious event of Gokulashtami Brahmotsavam will take place from 26th to 31st August 2024 (Swasthisri Krodhi varsha), with Bhagavatha Paarayanam starting from 23rd August.
+    //     We are delighted to extend a warm invite to blissful series of celebrations.
+    //     We request one and all to kindly come and participate in this divine event, enjoy the kathAshravanam, nAmasankIrtanam, utsava vaibhavam, cultural performances and attain the blessings of Sri Madhurisakhi sametha Sri Premikavaradhan as well as Sri Swamiji.`,
+    //     buttonContent: "More Details",
+    //     contactDetails: "You may reach out to Mr Arvind Ramaswami @ +65 9384 5470 for enquiries."
         
-    },
-    
+    // },
 ]
 
 

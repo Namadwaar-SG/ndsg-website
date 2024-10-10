@@ -2,6 +2,7 @@ import SectionHeader from '@app/components/common_components/SectionHeader'
 import React from 'react'
 import Image from 'next/image'
 import { eventpics } from '@constants/fixed'
+import { upcomingeventdetails } from '@constants/fixed'
 import UpcomingEvents from '@app/components/homepage_components/UpcomingEvents'
 import Link from 'next/link'
 
@@ -19,7 +20,7 @@ const Events = () => {
           </div>
         </section>
 
-        <section>
+        <section className='mb-12'>
           <div className='mx-5 max-sm:mx-20 grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 justify-center gap-5'>
             {eventpics.map((item, index) => (
                 
@@ -39,10 +40,11 @@ const Events = () => {
             ))}
           </div>
         </section>
-
+        
+        {upcomingeventdetails.length > 0 && (
         <section className='padding-x py-10 mt-20 bg-beige'>
           <UpcomingEvents/>
-        </section>
+        </section>)}
     </main>
   )
 }
