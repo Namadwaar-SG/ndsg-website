@@ -5,15 +5,17 @@ import UpcomingEvents from './components/homepage_components/UpcomingEvents'
 import Hero from './components/homepage_components/Hero'
 import Link from 'next/link'
 import Button from './components/aboutus_components/Button'
+import { upcomingeventdetails } from '@constants/fixed'
 
 //localhost:3000/
 const HomePage = () => {
   return (
     <main>
-      <div className='py-4 px-8 flex gap-4 justify-center items-center bg-primary-maroon'>
+      {/* Upcoming Event Notification */}
+      {/* <div className='py-4 px-8 flex gap-4 justify-center items-center bg-primary-maroon'>
         <p className='font-caudex text-white text-center text-lg max-md:text-sm'>Join us for Gokulashtami 2024 celebrations, at Namadwaar! </p>
         <Link href={`/events/upcomingevents/gokulashtami`}><Button label="More Details" type=""/></Link>
-      </div>
+      </div> */}
 
       <section className='padding lg:bg-background-pastel bg-cover bg-beige'>
         <Hero/>
@@ -24,9 +26,11 @@ const HomePage = () => {
       <section className='padding padding-y'>
         <WhatWeDo/>
       </section>
-      <section className='padding padding-y bg-beige'>
+      {upcomingeventdetails.length > 0 &&
+      (<section className='padding padding-y bg-beige'>
         <UpcomingEvents/>
-      </section>
+      </section>)}
+      
       
     </main>
   )
