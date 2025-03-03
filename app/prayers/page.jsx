@@ -31,6 +31,8 @@ const Newsletter = () => {
             Download PDF
           </a>
         </div>
+      </div>
+      <div className="pt-8 flex gap-4 items-center justify-center">
         <div className="flex flex-col items-center gap-8 padding-y px-20 max-lg:p-10 font-palanquin text-center text-balance text-black text-lg max-sm:text-base max-sm:leading-7 leading-8">
           <p>
             "Dola" means "swing," and "Utsavam" means "festival" in Sanskrit. It
