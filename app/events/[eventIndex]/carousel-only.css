@@ -202,4 +202,16 @@
   --bs-carousel-control-icon-filter: invert(1) grayscale(100);
 }
 
+.rich-text h1,
+.rich-text h2,
+.rich-text h3,
+.rich-text h4,
+.rich-text h5,
+.rich-text h6,
+.rich-text p,
+.rich-text ul,
+.rich-text ol {
+  all: revert;
+}
+
 /*# sourceMappingURL=carousel-only.css.map */

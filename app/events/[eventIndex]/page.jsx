@@ -69,6 +69,7 @@ const EventExample = () => {
       <section>
         <div className="px-48 max-md:px-12 mt-16 max-container">
           <div
+            className="rich-text"
             dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(selectedPost.rich_text, {
                 ADD_TAGS: ["iframe"],
