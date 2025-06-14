@@ -8,8 +8,6 @@ const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret_key";
 export async function POST(req) {
   try {
     const { email, password } = await req.json();
-    console.log(email);
-
     const userCredential = await signInWithEmailAndPassword(
       auth,
       email,
@@ -26,17 +24,20 @@ export async function POST(req) {
       { expiresIn: "1h" }
     );
 
-    return NextResponse.json({
-      message: "Login successful",
-      token,
-      user: {
-        email: user.email,
-        uid: user.uid,
-      },
+    const response = NextResponse.json({ message: "Login successful" });
+
+    response.cookies.set({
+      name: "token",
+      value: token,
+      httpOnly: true,
+      maxAge: 60 * 60, // 1 hour
+      path: "/",
+      sameSite: "lax",
     });
+    return response;
   } catch (err) {
     return NextResponse.json(
-      { message: err.message || "Login failed" },
+      { message: "Invalid credentials" },
       { status: 401 }
     );
   }
