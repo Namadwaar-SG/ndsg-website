@@ -33,7 +33,7 @@ jobs:
         run: gcloud auth configure-docker
 
       - name: Build and tag the docker image
-        run: |-
+        run: |
           docker build . \
             --build-arg NEXT_PUBLIC_FIREBASE_API_KEY=${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }} \
             --build-arg NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=${{ secrets.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }} \
