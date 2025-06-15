@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useEffect, useMemo } from "react";
+export const dynamicImport = "force-dynamic";
+import React, { useState, useEffect } from "react";
 import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";
 import { useRouter } from "@node_modules/next/navigation";
-import { Quill } from "react-quill";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const Upload = () => {
@@ -29,18 +29,27 @@ const Upload = () => {
     ],
   };
 
-  const Video = Quill.import("formats/video");
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      Promise.all([import("react-quill"), import("quill")]).then(
+        ([{ default: ReactQuill }, quill]) => {
+          const Quill = quill.default; // ✅ use .default to get the Quill constructor
+          const Video = Quill.import("formats/video");
 
-  class CustomVideo extends Video {
-    static create(value) {
-      let node = super.create(value);
-      node.setAttribute("width", "640"); // default width
-      node.setAttribute("height", "360"); // default height
-      return node;
+          class CustomVideo extends Video {
+            static create(value) {
+              const node = super.create(value);
+              node.setAttribute("width", "640");
+              node.setAttribute("height", "360");
+              return node;
+            }
+          }
+
+          Quill.register("formats/video", CustomVideo);
+        }
+      );
     }
-  }
-
-  Quill.register(CustomVideo, true);
+  }, []);
 
   const uploadToCloudinary = async (file) => {
     const formData = new FormData();
