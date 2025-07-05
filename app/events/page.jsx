@@ -9,7 +9,7 @@ import Loading from "@app/components/common_components/Loading";
 const Events = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [cursors, setCursors] = useState([null]);
+  const [cursors, setCursors] = useState([]);
   const [totalPosts, setTotalPosts] = useState(null);
   const [currentItems, setCurrentItems] = useState([]);
   const PAGE_SIZE = 9;
@@ -27,7 +27,7 @@ const Events = () => {
   async function loadPage(pageIndex) {
     setLoading(true);
     try {
-      const cursor = cursors[pageIndex];
+      const cursor = cursors?.[pageIndex] ?? null;
       const {
         events: newEvents,
         nextCursor,
@@ -113,7 +113,8 @@ const Events = () => {
           ))}
         </div>
         {/* Pagination */}
-        <div className="flex justify-center mt-8 gap-4">
+        {totalPages > 0 &&
+        <div className="flex justify-center mt-8 gap-4 font-palanquin">
           <button
             onClick={() => loadPage(currentPage - 1)}
             disabled={currentPage === 0 || loading}
@@ -132,6 +133,7 @@ const Events = () => {
             Next
           </button>
         </div>
+}
       </section>
 
       {upcomingeventdetails.length > 0 && (
