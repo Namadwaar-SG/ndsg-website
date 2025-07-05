@@ -1,11 +1,9 @@
-import React from 'react'
-import WhoWeAre from './components/homepage_components/WhoWeAre'
-import WhatWeDo from './components/homepage_components/WhatWeDo'
-import UpcomingEvents from './components/homepage_components/UpcomingEvents'
-import Hero from './components/homepage_components/Hero'
-import Link from 'next/link'
-import Button from './components/aboutus_components/Button'
-import { upcomingeventdetails } from '@constants/fixed'
+import React from "react";
+import WhoWeAre from "./components/homepage_components/WhoWeAre";
+import WhatWeDo from "./components/homepage_components/WhatWeDo";
+import UpcomingEvents from "./components/homepage_components/UpcomingEvents";
+import Hero from "./components/homepage_components/Hero";
+import { upcomingeventdetails } from "@constants/fixed";
 
 //localhost:3000/
 const HomePage = () => {
@@ -17,23 +15,22 @@ const HomePage = () => {
         <Link href={`/events/upcomingevents/gokulashtami`}><Button label="More Details" type=""/></Link>
       </div> */}
 
-      <section className='padding lg:bg-background-pastel bg-cover bg-beige'>
-        <Hero/>
+      <section className="padding lg:bg-background-pastel bg-cover bg-beige">
+        <Hero />
       </section>
-      <section className='padding padding-y'>
-        <WhoWeAre/>
+      <section className="padding padding-y">
+        <WhoWeAre />
       </section>
-      <section className='padding padding-y'>
-        <WhatWeDo/>
+      <section className="padding padding-y">
+        <WhatWeDo />
       </section>
-      {upcomingeventdetails.length > 0 &&
-      (<section className='padding padding-y bg-beige'>
-        <UpcomingEvents/>
-      </section>)}
-      
-      
+      {upcomingeventdetails.length > 0 && (
+        <section className="padding padding-y bg-beige">
+          <UpcomingEvents />
+        </section>
+      )}
     </main>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
