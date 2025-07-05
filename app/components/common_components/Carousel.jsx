@@ -24,7 +24,13 @@ const Carousel = ({
   })
   return (
     <div className='overflow-hidden relative rounded-md shadow-md'>
-        <div className='flex transition-transform ease-out duration-500' style={{transform: `translateX(-${curr*100}%)`}}>{carouselpics}</div> 
+        <div className='flex transition-transform ease-out duration-500 h-[500px]' style={{transform: `translateX(-${curr*100}%)`}}>
+            {carouselpics.map(child => (
+                <div className="w-full h-full flex-shrink-0 relative">
+                    {child}
+                </div>
+            ))}
+        </div>
         <div className='absolute inset-0 flex justify-between items-center p-4'>
             <button onClick={prev} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
                 <ChevronLeft size={30} />

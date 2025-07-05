@@ -61,7 +61,7 @@ export const eventpics = [
     },
 ];
 
-// Image carousel in House Satsang and Event example
+// Image carousel in Event example
 export const carouselpics = [
     {
         imgURL: '/assets/images/mg.jpeg',
@@ -85,3 +85,27 @@ export const carouselpics = [
     }
 ];
 
+
+// Image carousel in House Satsang example
+export const houseSatsangPics = [
+    {
+        imgURL: '/assets/images/house4.jpeg',
+        label: 'mg'
+    },
+    {
+        imgURL: '/assets/images/house6.jpg',
+        label: 'mg2'
+    },
+    {
+        imgURL: '/assets/images/house2.jpg',
+        label: 'mg3'
+    },
+    {
+        imgURL: '/assets/images/housesatsangh.jpg',
+        label: 'mg4'
+    },
+    {
+        imgURL: '/assets/images/house5.jpg',
+        label: 'mg5'
+    }
+];
