@@ -2,7 +2,7 @@
 import Carousel from '@app/components/common_components/Carousel'
 import SectionHeader from '@app/components/common_components/SectionHeader'
 import React from 'react'
-import { carouselpics } from '@constants/fixed';
+import { carouselpics, houseSatsangPics } from '@constants/fixed';
 import Image from 'next/image';
 
 
@@ -25,9 +25,9 @@ const HouseSatsang = () => {
 
         <section className='mt-5 flex justify-center bg-beige'>
           <div className='w-1/2 max-md:w-full'>
-            <Carousel autoSlide={true} autoSlideInterval={4000}>
-              {carouselpics.map((item) => (
-                <Image src={item.imgURL} key={item.label} width={800} height={200} className='object-cover'/>
+            <Carousel autoSlide={false} autoSlideInterval={4000}>
+              {houseSatsangPics.map((item) => (
+                <Image src={item.imgURL} key={item.label} fill className='object-cover h-full w-full'/>
               ))}
             </Carousel>
 

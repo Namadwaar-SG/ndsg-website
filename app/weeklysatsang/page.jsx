@@ -61,7 +61,7 @@ const WeeklySatsang = () => {
                             Schedule
                         </h1>
                         <p className='mt-2 font-palanquin text-left text-black text-lg max-sm:text-base max-sm:leading-7 leading-8'>
-                            Every Saturday. From 6:00pm to 7:00pm (SGT)
+                            Every Saturday. From 5:30pm to 8:30pm (SGT)
                         </p>
                     </div>
 
