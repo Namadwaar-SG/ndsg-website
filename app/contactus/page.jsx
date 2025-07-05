@@ -82,7 +82,7 @@ const ContactUs = () => {
           </div>
         </section>
         <section className="my-20">
-          {/* <div>
+          <div>
             <GoogleMapsEmbed
               apiKey={process.env.NEXT_PUBLIC_MAP_KEY}
               height={300}
@@ -91,7 +91,7 @@ const ContactUs = () => {
               q="448,Serangoon Road, Singapore 218138"
               zoom={18}
             />
-          </div> */}
+          </div>
         </section>
 
         <section className="my-20">
