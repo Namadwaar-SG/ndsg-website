@@ -14,7 +14,7 @@ const db = admin.firestore();
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
 
-  const pageSize = parseInt(searchParams.get("pageSize")) || 9;
+  const pageSize = parseInt(searchParams.get("pageSize")) || 6;
   const cursor = searchParams.get("cursor");
 
   let eventsQuery = db

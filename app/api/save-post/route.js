@@ -13,7 +13,7 @@ const db = getFirestore();
 export async function POST(request) {
   try {
     const data = await request.json();
-    const { images, richText, title, date } = data;
+    const { images, richText, title, date, type } = data;
 
     if (!images || !richText || !Array.isArray(images)) {
       return NextResponse.json(
@@ -21,14 +21,25 @@ export async function POST(request) {
         { status: 400 }
       );
     }
-    const docRef = await db.collection("event-post").add({
-      title: title,
-      date: date,
-      image_links: images,
-      rich_text: richText,
-      created_at: new Date().toISOString(),
-    });
-    return NextResponse.json({ success: true, id: docRef.id });
+    if (type === "Past") {
+      const docRef = await db.collection("event-post").add({
+        title: title,
+        date: date,
+        image_links: images,
+        rich_text: richText,
+        created_at: new Date().toISOString(),
+      });
+      return NextResponse.json({ success: true, id: docRef.id });
+    } else {
+      const docRef = await db.collection("upcoming-event-post").add({
+        title: title,
+        date: date,
+        image_links: images,
+        rich_text: richText,
+        created_at: new Date().toISOString(),
+      });
+      return NextResponse.json({ success: true, id: docRef.id });
+    }
   } catch (error) {
     console.error("Error saving post:", error);
     return NextResponse.json({ error: "Failed to save post" }, { status: 500 });

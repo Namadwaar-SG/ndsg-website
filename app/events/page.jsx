@@ -9,10 +9,11 @@ import Loading from "@app/components/common_components/Loading";
 const Events = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [cursors, setCursors] = useState([]);
+  const [cursors, setCursors] = useState([null]);
   const [totalPosts, setTotalPosts] = useState(null);
   const [currentItems, setCurrentItems] = useState([]);
-  const PAGE_SIZE = 9;
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
+  const PAGE_SIZE = 6;
 
   async function fetchPage(cursor) {
     let url = `/api/get-post?pageSize=${PAGE_SIZE}`;
@@ -27,7 +28,7 @@ const Events = () => {
   async function loadPage(pageIndex) {
     setLoading(true);
     try {
-      const cursor = cursors?.[pageIndex] ?? null;
+      const cursor = cursors[pageIndex];
       const {
         events: newEvents,
         nextCursor,
@@ -36,11 +37,13 @@ const Events = () => {
 
       setCurrentPage(pageIndex);
       setTotalPosts(totalPosts);
-      setCurrentItems(newEvents.slice(0, 9));
+      setCurrentItems(newEvents);
 
       // If moving forward and nextCursor is new, add it to cursors list
-      if (pageIndex === cursors.length - 1 && nextCursor) {
-        setCursors((prev) => [...prev, nextCursor]);
+      if (nextCursor && !cursors[pageIndex + 1]) {
+        const newCursors = [...cursors];
+        newCursors[pageIndex + 1] = nextCursor;
+        setCursors(newCursors);
       }
     } catch (error) {
       console.error(error);
@@ -51,6 +54,10 @@ const Events = () => {
 
   useEffect(() => {
     loadPage(0);
+    fetch("/api/get-upcoming-events")
+      .then((res) => res.json())
+      .then(setUpcomingEvents)
+      .catch(console.error);
   }, []);
 
   // PAGINATION CONTROLS
@@ -84,11 +91,50 @@ const Events = () => {
               blissful evening of song, chant and dance!{" "}
             </span>
           </p>
-          <div className="mb-12"></div>
         </div>
       </section>
 
       <section className="mb-12">
+        <h1
+          className="font-caudex text-primary-maroon text-4xl max-md:text-3xl
+      max-md:leading-8 font-bold max-lg:text-center m-4"
+        >
+          Upcoming Events
+        </h1>
+        <div className="mx-5 max-sm:mx-20 grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 justify-center gap-5">
+          {upcomingEvents.map((item, index) => (
+            <div
+              className="group relative overflow-hidden cursor-pointer"
+              key={index}
+            >
+              <Link href={`/events/upcomingevents/${item.id}`}>
+                <img
+                  className="w-full aspect-[6/5] object-cover group-hover:scale-125 transition-transform duration-1000"
+                  src={item.image_links[0]}
+                  alt={item.title}
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black ">
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-5 text-center">
+                    <h1 className="text-2xl max-lg:text-lg font-palanquin text-white">
+                      {item.title}
+                    </h1>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <br />
+      </section>
+
+      {/* {"PAST EVENTS"} */}
+      <section className="mb-12">
+        <h1
+          className="font-caudex text-primary-maroon text-4xl max-md:text-3xl
+      max-md:leading-8 font-bold max-lg:text-center m-4"
+        >
+          Past Events
+        </h1>
         <div className="mx-5 max-sm:mx-20 grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 justify-center gap-5">
           {currentItems.map((item, index) => (
             <div
@@ -113,29 +159,28 @@ const Events = () => {
           ))}
         </div>
         {/* Pagination */}
-        {totalPages > 0 &&
-        <div className="flex justify-center mt-8 gap-4 font-palanquin">
-          <button
-            onClick={() => loadPage(currentPage - 1)}
-            disabled={currentPage === 0 || loading}
-            className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
-          >
-            Previous
-          </button>
-          <span className="px-4 py-2 text-gray-700">
-            Page {currentPage + 1} of {totalPages}
-          </span>
-          <button
-            onClick={() => loadPage(currentPage + 1)}
-            disabled={loading || currentPage + 1 >= totalPages}
-            className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
-          >
-            Next
-          </button>
-        </div>
-}
+        {totalPages > 0 && (
+          <div className="flex justify-center mt-8 gap-4 font-palanquin">
+            <button
+              onClick={() => loadPage(currentPage - 1)}
+              disabled={currentPage === 0 || loading}
+              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
+            >
+              Previous
+            </button>
+            <span className="px-4 py-2 text-gray-700">
+              Page {currentPage + 1} of {totalPages}
+            </span>
+            <button
+              onClick={() => loadPage(currentPage + 1)}
+              disabled={loading || currentPage + 1 >= totalPages}
+              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
+        )}
       </section>
-
       {upcomingeventdetails.length > 0 && (
         <section className="padding-x py-10 mt-20 bg-beige">
           <UpcomingEvents />

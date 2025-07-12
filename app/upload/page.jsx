@@ -14,6 +14,7 @@ const Upload = () => {
   const today = new Date().toISOString().split("T")[0];
   const [date, setDate] = useState(today);
   const [loading, setLoading] = useState(false);
+  const [type, setType] = useState("");
   const router = useRouter();
 
   const modules = {
@@ -96,6 +97,7 @@ const Upload = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           title: title,
+          type: type,
           date: date,
           images: urls,
           richText: text,
@@ -193,6 +195,18 @@ const Upload = () => {
             className="border p-2 w-full rounded"
             required
           />
+        </div>
+        <div>
+          <label className="block mb-1 font-medium">Type</label>
+          <select
+            name="Type"
+            className="border p-2 w-full rounded"
+            onChange={(e) => setType(e.target.value)}
+            defaultValue={"Upcoming"}
+          >
+            <option value="Upcoming">Upcoming Event</option>
+            <option value="Past">Past Event</option>
+          </select>
         </div>
       </div>
       <div className="my-4 p-4 rounded shadow">

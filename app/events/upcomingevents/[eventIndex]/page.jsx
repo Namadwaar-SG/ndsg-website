@@ -1,82 +1,101 @@
-import React from "react";
+"use client";
+// import Carousel from "@app/components/common_components/Carousel";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { upcomingeventdetails } from "@constants/fixed";
-import Button from "@app/components/aboutus_components/Button";
+import Link from "next/link";
+import DOMPurify from "dompurify";
+import { formatDate } from "@lib/formatDate";
+import { useParams } from "next/navigation";
+import Loading from "@app/components/common_components/Loading";
+import BootstrapCarousel from "@app/components/common_components/BootstrapCarousel";
+import "../../[eventIndex]/carousel-only.css";
 
-export function generateStaticParams() {
-  return upcomingeventdetails.map((item, idx) => ({
-    eventIndex: idx.toString(),
-  }));
-}
+const EventExample = () => {
+  const { eventIndex } = useParams();
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [loading, setLoading] = useState(true);
+  window.scroll(0, 0);
+  useEffect(() => {
+    async function fetchPost() {
+      try {
+        const res = await fetch(
+          `/api/get-upcoming-event-by-id?id=${eventIndex}`
+        );
+        if (!res.ok) throw new Error("Failed to fetch event");
 
-const UpcomingEvent = ({ params }) => {
-  const { eventIndex } = params;
-  const lines = upcomingeventdetails[eventIndex].details.split("\n");
+        const data = await res.json();
+        setSelectedPost(data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    }
 
+    if (eventIndex) fetchPost();
+  }, [eventIndex]);
+
+  if (loading) return <Loading />;
+  if (!selectedPost) return <div>Post not found</div>;
   return (
     <main>
-      <section className="max-container padding-y px-10 max-sm:px-8">
+      <section className="py-12 px-10 max-sm:p-8 bg-primary-maroon">
         <div className="relative">
-          <h1 className="font-caudex text-4xl max-md:text-2xl max-sm:text-xl font-bold text-center">
-            {upcomingeventdetails[eventIndex].title}
+          <h1 className="font-caudex text-4xl max-md:text-2xl max-sm:text-xl font-bold text-center text-beige">
+            {selectedPost.title}
           </h1>
+          <Link href="/events">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 absolute inset-y-0 left-0 max-sm:w-3 max-sm:h-3 text-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </Link>
         </div>
       </section>
 
-      <section className="flex justify-center px-12 gap-5 max-md:flex-col">
-        {upcomingeventdetails[eventIndex].imgURL.map((item) => (
-          <div className="w-1/3 max-md:w-full">
-            <img src={item} alt="" />
-          </div>
-        ))}
+      <section className="flex justify-center bg-beige">
+        <div className="w-1/2 max-md:w-full">
+          <BootstrapCarousel selectedPost={selectedPost} />
+        </div>
       </section>
-
-      <section className="max-container mt-10 padding-x padding-y">
-        <div className="flex flex-row justify-start gap-28 font-caudex">
-          <div>
-            <h1 className="text-3xl max-sm:text-lg font-semibold">Date</h1>
-            <p className="font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8">
-              {upcomingeventdetails[eventIndex].date}
-            </p>
-          </div>
-
-          <div>
-            <h1 className="text-3xl max-sm:text-lg font-semibold">Time</h1>
-            <p className="font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8">
-              {upcomingeventdetails[eventIndex].time}
-            </p>
-          </div>
-        </div>
-        <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
-        <div className="">
-          <h1 className="mb-5 font-caudex text-3xl max-sm:text-lg font-semibold">
-            Details
-          </h1>
-          {lines.map((para, index) => (
-            <div>
-              <p
-                key={index}
-                className="font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8"
-              >
-                {para}
-              </p>
-              <br />
-            </div>
-          ))}
-        </div>
-        <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
-        <div className="">
-          <h1 className="mb-2 font-caudex text-3xl max-sm:text-lg font-semibold">
-            Contact Information
-          </h1>
-          <p className="font-palanquin text-left text-black text-xl max-sm:text-base max-sm:leading-7 leading-8">
-            {upcomingeventdetails[eventIndex].contactDetails}
+      <section>
+        <div className="px-48 max-md:px-12 mt-16 max-container">
+          <div
+            className="rich-text"
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(selectedPost.rich_text, {
+                ADD_TAGS: ["iframe"],
+                ADD_ATTR: [
+                  "allow",
+                  "allowfullscreen",
+                  "frameborder",
+                  "scrolling",
+                  "src",
+                  "height",
+                  "width",
+                ],
+                FORBID_ATTR: ["onload", "onclick"], // optional safety
+              }),
+            }}
+          />
+          <hr className="my-6 w-full h-px bg-gray-300 border-0 rounded" />
+          <p className="mb-12 font-palanquin text-left text-primary-maroon text-xl max-sm:text-base max-sm:leading-7 leading-8">
+            {formatDate(selectedPost.date)}
           </p>
         </div>
-        {/* <div className='mt-10'><Button label={upcomingeventdetails[i].buttonContent} type="event"/></div> */}
       </section>
     </main>
   );
 };
 
-export default UpcomingEvent;
+export default EventExample;
