@@ -4,19 +4,19 @@ import next from "next";
 import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Loading from "@app/components/common_components/Loading";
+import constants from "./constants.json";
 
 const Newsletter = () => {
   const [links, setLinks] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [pageNum, setPageNum] = useState(1);
   const nextPage = () =>
-    pageNum == 39 ? setPageNum(pageNum) : setPageNum(pageNum + 1);
+    pageNum == links.length - 1 ? setPageNum(pageNum) : setPageNum(pageNum + 1);
   const previousPage = () =>
     pageNum == 1 ? setPageNum(pageNum) : setPageNum(pageNum - 1);
-  const [selected, setSelected] = useState("newsletter_2");
+  const [selected, setSelected] = useState("newsletter_5");
 
   const handleChange = async (event) => {
+    setPageNum(1);
     setSelected(event.target.value);
   };
   const fetchLinks = async () => {
@@ -34,10 +34,6 @@ const Newsletter = () => {
   };
   useEffect(() => {
     fetchLinks();
-    links.forEach(({ url }) => {
-      const img = new window.Image();
-      img.src = url;
-    });
   }, [selected]);
 
   return (
@@ -51,7 +47,7 @@ const Newsletter = () => {
           className="font-caudex text-primary-maroon text-4xl max-md:text-2xl text-center"
         >
           <option value="" disabled>
-            -- Select an option --
+            -- Select edition --
           </option>
           <option value="newsletter_1">Edition 1</option>
           <option value="newsletter_2">Edition 2</option>
@@ -69,12 +65,13 @@ const Newsletter = () => {
           className="px-2 flex flex-wrap gap-8 bg-white/45 underline underline-offset-4 decoration-0 justify-center pt-6 cursor-pointer font-palanquin text-base 
             max-lg:text-sm max-sm:text-xs text-primary-maroon"
         >
-          <div onClick={() => setPageNum(1)}>Home</div>
-          <div onClick={() => setPageNum(3)}>Preface</div>
-          <div onClick={() => setPageNum(5)}>April'24</div>
-          <div onClick={() => setPageNum(11)}>May'24</div>
-          <div onClick={() => setPageNum(16)}>June'24</div>
-          <div onClick={() => setPageNum(25)}>Local Treasures</div>
+          {constants.editions
+            .find((edition) => edition.edition === selected)
+            .bookmarks.map((bookmark, i) => (
+              <div key={i} onClick={() => setPageNum(bookmark.page)}>
+                {bookmark.name}
+              </div>
+            ))}
         </div>
         {/* Newsletter */}
         <div className="px-52 flex max-md:flex-col justify-center items-center max-xl:px-12 max-md:px-0 relative">
@@ -94,7 +91,7 @@ const Newsletter = () => {
               />
             </svg>
           </button>
-          {links.length > 0 || loading === true ? (
+          {links.length > 0 && (
             <>
               <Image
                 src={`${links[pageNum - 1]?.url || ""}`}
@@ -102,7 +99,6 @@ const Newsletter = () => {
                 height={100}
                 alt="newsletter"
                 className="w-1/2 max-md:w-3/4"
-                onLoadingComplete={() => setLoading(false)}
               />
               <Image
                 src={`${links[pageNum]?.url || ""}`}
@@ -110,11 +106,8 @@ const Newsletter = () => {
                 height={100}
                 alt="newsletter"
                 className="w-1/2 max-md:hidden"
-                onLoadingComplete={() => setLoading(false)}
               />
             </>
-          ) : (
-            <Loading />
           )}
           <button onClick={nextPage}>
             <svg
@@ -136,8 +129,13 @@ const Newsletter = () => {
         {/* Download Button */}
         <div className="mb-12">
           <a
-            href="/assets/images/Namadwaar Singapore Newsletter Issue 2.pdf"
-            download="ND_Newsletter_Edition_2"
+            href={
+              constants.editions.find((edition) => edition.edition === selected)
+                .downloadLink
+            }
+            download={`ND_Newsletter_Edition_${selected.charAt(
+              selected.length - 1
+            )}`}
             className="p-2 bg-primary-orange text-white rounded-md font-palanquin"
           >
             Download PDF
