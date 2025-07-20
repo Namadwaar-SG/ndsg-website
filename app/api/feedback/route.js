@@ -14,18 +14,18 @@ const db = getFirestore();
 export async function POST(request) {
   try {
     const data = await request.json();
-    const { name, email, phone } = data;
+    const { name, contact, feedback } = data;
 
-    if (!name || !email) {
+    if (!name || !contact || !feedback) {
       return NextResponse.json(
         { error: "Missing or invalid fields" },
         { status: 400 }
       );
     }
-    const docRef = await db.collection("signups").add({
+    const docRef = await db.collection("feedback").add({
       name: name,
-      email: email,
-      phone: phone,
+      contact: contact,
+      feedback: feedback,
     });
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -37,8 +37,8 @@ export async function POST(request) {
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: "shriniket03@gmail.com", // Replace with where you want form responses sent
-      subject: "Someone Wants to Sign Up For Updates!",
-      text: `Name: ${name || ""}\nEmail: ${email || ""}\nPhone: ${phone || ""}`,
+      subject: "New Feedback Form Submission",
+      text: `Name: ${name}\nContact: ${contact}\nFeedback: ${feedback}`,
     };
     try {
       await transporter.sendMail(mailOptions);

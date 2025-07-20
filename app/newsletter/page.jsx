@@ -5,6 +5,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import constants from "./constants.json";
+import { db } from "@app/firebaseconfig";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const Newsletter = () => {
   const [links, setLinks] = useState([]);
@@ -14,6 +16,41 @@ const Newsletter = () => {
   const previousPage = () =>
     pageNum == 1 ? setPageNum(pageNum) : setPageNum(pageNum - 1);
   const [selected, setSelected] = useState("newsletter_5");
+
+  const [name, setName] = useState("");
+  const [contact, setContact] = useState("");
+  const [feedback, setFeedback] = useState("");
+
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    if (e) e.preventDefault();
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          contact: contact,
+          feedback: feedback,
+        }),
+      });
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || "Failed to submit feedback");
+      }
+
+      alert("Thank you for your feedback!");
+      setName("");
+      setContact("");
+      setFeedback("");
+    } catch (err) {
+      alert("Error: " + err.message);
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   const handleChange = async (event) => {
     setPageNum(1);
@@ -58,7 +95,6 @@ const Newsletter = () => {
         </select>
       </div>
 
-      {/* Latest Newsletter edition will be hardcoded. Previous ones will have pdf links. */}
       <div className="flex flex-col items-center gap-8">
         {/* Newsletter Hyperlinks */}
         <div
@@ -141,6 +177,52 @@ const Newsletter = () => {
             Download PDF
           </a>
         </div>
+      </div>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <h1 className="my-6 container max-container text-center font-caudex text-4xl max-sm:text-3xl font-bold text-primary-maroon">
+            Feedback Form
+          </h1>
+          <div className="my-4 p-4 rounded shadow">
+            <div>
+              <label className="block mb-1 font-medium">Name</label>
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="border p-2 w-full rounded bg-white border-black"
+                required
+              />
+            </div>
+            <div>
+              <label className="block mb-1 font-medium">Contact Details</label>
+              <input
+                type="text"
+                value={contact}
+                onChange={(e) => setContact(e.target.value)}
+                className="border p-2 w-full rounded border-black"
+                required
+              />
+            </div>
+            <div>
+              <label className="block mb-1 font-medium">Feedback</label>
+              <textarea
+                type="text"
+                value={feedback}
+                onChange={(e) => setFeedback(e.target.value)}
+                className="border p-2 w-full rounded border-black"
+                required
+                rows={5}
+              />
+            </div>
+            <button
+              type="submit"
+              className="px-4 py-2 mt-4 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
+            >
+              {submitting ? "Submitting..." : "Submit"}
+            </button>
+          </div>
+        </form>
       </div>
     </main>
   );

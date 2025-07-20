@@ -18,11 +18,11 @@ const ContactUs = () => {
   email validation
   agree to terms must be mandatory
   */
-
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    if (e) e.preventDefault();
     setLoading(true);
     try {
-      await fetch("/api/contact-us", {
+      const res = await fetch("/api/contact-us", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -31,12 +31,18 @@ const ContactUs = () => {
           phone: phone,
         }),
       });
-    } catch (err) {
-    } finally {
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || "Failed to submit feedback");
+      }
+
       alert("Successfully signed up!");
       setName("");
       setEmail("");
       setPhone("");
+    } catch (err) {
+      alert("Error: " + err.message);
+    } finally {
       setLoading(false);
     }
   };
