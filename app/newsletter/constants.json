@@ -78,11 +78,23 @@
     {
       "edition": "newsletter_6",
       "bookmarks": [
-        { "name": "Opening Remarks", "page": 2 },
-        { "name": "Market Updates", "page": 10 },
-        { "name": "Closing Summary", "page": 20 }
+        { "name": "Home", "page": 1 },
+        { "name": "Preface", "page": 2 },
+        { "name": "Apr'25", "page": 3 },
+        { "name": "Music Therapy & Mahamantra", "page": 8 },
+        {
+          "name": "Sadhguru - The Silent Flame that Lights The Way",
+          "page": 13
+        },
+        { "name": "May'25", "page": 19 },
+        { "name": "Avataara Hi Asankhyeyaa", "page": 24 },
+        { "name": "GK Kids' Corner", "page": 26 },
+        { "name": "Jun'25", "page": 30 },
+        { "name": "Sri Srinivasa Perumal Temple", "page": 31 },
+        { "name": "Tamil Readers: மனத்துக்கு இனியான்", "page": 39 },
+        { "name": "Activities", "page": 42 }
       ],
-      "downloadLink": "https://drive.google.com/uc?export=download&id=1FxVd7e3k03UxCjo8det4Dvw0RyDCpYGZ"
+      "downloadLink": "https://drive.google.com/uc?export=download&id=1zWLUvJ0hfa0YTO_tX33cPIgGQdbj6JUD"
     }
   ]
 }

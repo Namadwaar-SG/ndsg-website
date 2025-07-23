@@ -36,8 +36,8 @@ export async function POST(request) {
     });
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: "shriniket03@gmail.com", // Replace with where you want form responses sent
-      subject: "Someone Wants to Sign Up For Updates!",
+      to: "namadwaarsingapore@gmail.com", // Replace with where you want form responses sent
+      subject: "[Contact Us] - New Response!",
       text: `Name: ${name || ""}\nEmail: ${email || ""}\nPhone: ${phone || ""}`,
     };
     try {

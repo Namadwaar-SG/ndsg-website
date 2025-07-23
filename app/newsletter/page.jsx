@@ -15,7 +15,7 @@ const Newsletter = () => {
     pageNum == links.length - 1 ? setPageNum(pageNum) : setPageNum(pageNum + 1);
   const previousPage = () =>
     pageNum == 1 ? setPageNum(pageNum) : setPageNum(pageNum - 1);
-  const [selected, setSelected] = useState("newsletter_5");
+  const [selected, setSelected] = useState("newsletter_6");
 
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
