@@ -181,7 +181,7 @@ const Newsletter = () => {
       <div>
         <form onSubmit={handleSubmit}>
           <h1 className="my-6 container max-container text-center font-caudex text-4xl max-sm:text-3xl font-bold text-primary-maroon">
-            Feedback Form
+            Newsletter Feedback Form
           </h1>
           <div className="my-4 p-4 rounded shadow">
             <div>
@@ -189,6 +189,7 @@ const Newsletter = () => {
               <input
                 type="text"
                 value={name}
+                placeholder={"Your name..."}
                 onChange={(e) => setName(e.target.value)}
                 className="border p-2 w-full rounded bg-white border-black"
                 required
@@ -199,6 +200,7 @@ const Newsletter = () => {
               <input
                 type="text"
                 value={contact}
+                placeholder={"Your contact details..."}
                 onChange={(e) => setContact(e.target.value)}
                 className="border p-2 w-full rounded border-black"
                 required
@@ -209,6 +211,7 @@ const Newsletter = () => {
               <textarea
                 type="text"
                 value={feedback}
+                placeholder={"Your feedback about the newsletter..."}
                 onChange={(e) => setFeedback(e.target.value)}
                 className="border p-2 w-full rounded border-black"
                 required
