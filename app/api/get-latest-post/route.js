@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { NextResponse } from "next/server";
 import admin from "firebase-admin";
 
@@ -18,7 +19,7 @@ export async function GET() {
       .orderBy("date", "desc")
       .limit(3);
 
-    const snapshot = await eventsQuery.get();
+    const snapshot = await eventsQuery.get({ source: "server" });
     const events = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
     return NextResponse.json(events, {
