@@ -3,98 +3,99 @@
     {
       "edition": "newsletter_1",
       "bookmarks": [
-        { "name": "Home", "page": 1 },
-        { "name": "Preface", "page": 2 },
-        { "name": "Jan'23", "page": 3 },
-        { "name": "Feb'23", "page": 6 },
-        { "name": "Mar'23", "page": 8 },
-        { "name": "Chaitanya Mahaprabhu", "page": 9 }
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 2, "endPage": 2 },
+        { "name": "Monthly Updates: Jan'23", "page": 3, "endPage": 3 },
+        { "name": "Monthly Updates: Feb'23", "page": 6, "endPage": 6 },
+        { "name": "Monthly Updates: Mar'23", "page": 8, "endPage": 8 },
+        { "name": "Chaitanya Mahaprabhu", "page": 9, "endPage": 12 }
       ],
       "downloadLink": "https://drive.google.com/uc?export=download&id=1EZ4bcEkoYuUB1eLK54uNt7aocK--meUp"
     },
     {
       "edition": "newsletter_2",
       "bookmarks": [
-        { "name": "Home", "page": 1 },
-        { "name": "Preface", "page": 3 },
-        { "name": "April'24", "page": 5 },
-        { "name": "May'24", "page": 11 },
-        { "name": "June'24", "page": 16 },
-        { "name": "Local Treasures", "page": 25 }
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 3, "endPage": 3 },
+        { "name": "Monthly Updates: April'24", "page": 5, "endPage": 6 },
+        { "name": "Monthly Updates: May'24", "page": 11, "endPage": 13 },
+        { "name": "Monthly Updates: June'24", "page": 16, "endPage": 17 },
+        { "name": "Local Treasures", "page": 25, "endPage": 34 }
       ],
       "downloadLink": "https://drive.google.com/uc?export=download&id=1RrZc4DxxxXS03MklHY3n0hvh9HSsb3O0"
     },
     {
       "edition": "newsletter_3",
       "bookmarks": [
-        { "name": "Home", "page": 1 },
-        { "name": "Preface", "page": 3 },
-        { "name": "Jul'24", "page": 5 },
-        { "name": "Guru - Our Sole Refuge", "page": 8 },
-        { "name": "Jagannath Puri", "page": 11 },
-        { "name": "Aug'24", "page": 14 },
-        { "name": "Sita Devi", "page": 17 },
-        { "name": "Shakti Peethas", "page": 22 },
-        { "name": "Srimad Bhagavatham", "page": 23 },
-        { "name": "Sep'24", "page": 28 },
-        { "name": "Temples of SEA", "page": 30 },
-        { "name": "Local Treasures", "page": 35 }
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 3, "endPage": 3 },
+        { "name": "Monthly Updates: Jul'24", "page": 5, "endPage": 5 },
+        { "name": "Guru - Our Sole Refuge", "page": 8, "endPage": 10 },
+        { "name": "Jagannath Puri", "page": 11, "endPage": 13 },
+        { "name": "Monthly Updates: Aug'24", "page": 14, "endPage": 16 },
+        { "name": "Sita Devi", "page": 17, "endPage": 21 },
+        { "name": "Shakti Peethas", "page": 22, "endPage": 22 },
+        { "name": "Srimad Bhagavatham", "page": 23, "endPage": 26 },
+        { "name": "Monthly Updates: Sep'24", "page": 28, "endPage": 29 },
+        { "name": "Temples of SEA", "page": 30, "endPage": 34 },
+        { "name": "Local Treasures", "page": 35, "endPage": 38 }
       ],
       "downloadLink": "https://drive.google.com/uc?export=download&id=1DPhwEZs_3wcwE8jl6GDLAiv2OG0WruLC"
     },
     {
       "edition": "newsletter_4",
       "bookmarks": [
-        { "name": "Home", "page": 1 },
-        { "name": "Preface", "page": 2 },
-        { "name": "Oct'24", "page": 4 },
-        { "name": "Sri Hanuman", "page": 5 },
-        { "name": "Nov'24", "page": 12 },
-        { "name": "Temples of SEA", "page": 14 },
-        { "name": "Srimad Bhagavatham", "page": 16 },
-        { "name": "Deepavali", "page": 19 },
-        { "name": "Dec'24", "page": 22 },
-        { "name": "Melodies of Margazhi", "page": 23 },
-        { "name": "Science & Scriptures", "page": 26 }
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 2, "endPage": 3 },
+        { "name": "Monthly Updates: Oct'24", "page": 4, "endPage": 4 },
+        { "name": "Sri Hanuman", "page": 5, "endPage": 8 },
+        { "name": "Monthly Updates: Nov'24", "page": 9, "endPage": 9 },
+        { "name": "Temples of SEA", "page": 14, "endPage": 15 },
+        { "name": "Srimad Bhagavatham", "page": 16, "endPage": 18 },
+        { "name": "Deepavali", "page": 19, "endPage": 21 },
+        { "name": "Monthly Updates: Dec'24", "page": 22, "endPage": 22 },
+        { "name": "Melodies of Margazhi", "page": 23, "endPage": 25 },
+        { "name": "Science & Scriptures", "page": 26, "endPage": 29 }
       ],
       "downloadLink": "https://drive.google.com/uc?export=download&id=1DONrkpzdEgzW0VEew6yylX3dDiDsNRXk"
     },
     {
       "edition": "newsletter_5",
       "bookmarks": [
-        { "name": "Home", "page": 1 },
-        { "name": "Preface", "page": 2 },
-        { "name": "Jan'25", "page": 3 },
-        { "name": "Sugreeva & Vali", "page": 5 },
-        { "name": "Feb'25", "page": 10 },
-        { "name": "Vrtrasura Charithram", "page": 11 },
-        { "name": "Science & Scriptures", "page": 16 },
-        { "name": "Mar'25", "page": 21 },
-        { "name": "Shree Muktinath", "page": 22 },
-        { "name": "Activities", "page": 26 }
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 2, "endPage": 2 },
+        { "name": "Monthly Updates: Jan'25", "page": 3, "endPage": 4 },
+        { "name": "Sugreeva & Vali", "page": 5, "endPage": 9 },
+        { "name": "Monthly Updates: Feb'25", "page": 10, "endPage": 10 },
+        { "name": "Vrtrasura Charithram", "page": 11, "endPage": 15 },
+        { "name": "Science & Scriptures", "page": 16, "endPage": 20 },
+        { "name": "Monthly Updates: Mar'25", "page": 21, "endPage": 21 },
+        { "name": "Shree Muktinath", "page": 22, "endPage": 25 },
+        { "name": "Activities", "page": 26, "endPage": 27 }
       ],
       "downloadLink": "https://drive.google.com/uc?export=download&id=1FxVd7e3k03UxCjo8det4Dvw0RyDCpYGZ"
     },
     {
       "edition": "newsletter_6",
       "bookmarks": [
-        { "name": "Home", "page": 1 },
-        { "name": "Preface", "page": 2 },
-        { "name": "Apr'25", "page": 3 },
-        { "name": "Music Therapy & Mahamantra", "page": 8 },
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 2, "endPage": 2 },
+        { "name": "Monthly Updates: Apr'25", "page": 3, "endPage": 7 },
+        { "name": "Music Therapy & Mahamantra", "page": 8, "endPage": 12 },
         {
           "name": "Sadhguru - The Silent Flame that Lights The Way",
-          "page": 13
+          "page": 13,
+          "endPage": 18
         },
-        { "name": "May'25", "page": 19 },
-        { "name": "Avataara Hi Asankhyeyaa", "page": 24 },
-        { "name": "GK Kids' Corner", "page": 26 },
-        { "name": "Jun'25", "page": 30 },
-        { "name": "Sri Srinivasa Perumal Temple", "page": 31 },
-        { "name": "மனத்துக்கு இனியான்", "page": 39 },
-        { "name": "Activities", "page": 42 }
+        { "name": "Monthly Updates: May'25", "page": 19, "endPage": 23 },
+        { "name": "Avataara Hi Asankhyeyaa", "page": 24, "endPage": 25 },
+        { "name": "GK Kids' Corner", "page": 26, "endPage": 29 },
+        { "name": "Monthly Updates: Jun'25", "page": 30, "endPage": 30 },
+        { "name": "Sri Srinivasa Perumal Temple", "page": 31, "endPage": 37 },
+        { "name": "மனத்துக்கு இனியான்", "page": 39, "endPage": 42 },
+        { "name": "Activities", "page": 43, "endPage": 43 }
       ],
-      "downloadLink": "https://drive.google.com/uc?export=download&id=1zWLUvJ0hfa0YTO_tX33cPIgGQdbj6JUD"
+      "downloadLink": "https://drive.google.com/uc?export=download&id=1b_BONdzW_ibfEoESFKHTdP9D16WmtmsF"
     }
   ]
 }

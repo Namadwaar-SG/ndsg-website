@@ -10,9 +10,9 @@ if (!admin.apps.length) {
 }
 
 const db = admin.firestore();
-const todayStr = new Date().toISOString().split("T")[0]; // "2025-07-12"
 
 export async function GET() {
+  const todayStr = new Date().toISOString().split("T")[0]; // "2025-07-12"
   try {
     let eventsQuery = db
       .collection("upcoming-event-post")

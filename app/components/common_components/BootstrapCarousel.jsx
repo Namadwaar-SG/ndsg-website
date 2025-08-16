@@ -6,7 +6,7 @@ const BootstrapCarousel = ({ selectedPost }) => {
   return (
     <div>
       <Carousel>
-        {selectedPost.image_links.map((item, i) => (
+        {(selectedPost?.image_links || []).map((item, i) => (
           <Carousel.Item interval={4000} key={i}>
             <Image
               src={item}
