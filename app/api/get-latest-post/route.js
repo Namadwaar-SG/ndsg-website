@@ -21,7 +21,9 @@ export async function GET() {
     const snapshot = await eventsQuery.get();
     const events = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
-    return NextResponse.json(events);
+    return NextResponse.json(events, {
+      headers: { "Cache-Control": "no-store" },
+    });
   } catch (error) {
     console.log(error);
     return NextResponse.json(
