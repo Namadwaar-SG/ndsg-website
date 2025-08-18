@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com", "storage.googleapis.com"],
+    remotePatterns: [
+      { protocol: "https", hostname: "res.cloudinary.com" },
+      { protocol: "https", hostname: "storage.googleapis.com" },
+    ],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {

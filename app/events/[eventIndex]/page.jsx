@@ -2,7 +2,7 @@
 // import Carousel from "@app/components/common_components/Carousel";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 import { formatDate } from "@lib/formatDate";
 import { useParams } from "next/navigation";
 import Loading from "@app/components/common_components/Loading";
@@ -34,6 +34,15 @@ const EventExample = () => {
 
   return (
     <>
+      <style jsx global>{`
+        .rich-text iframe {
+          max-width: 100%;
+          width: 100%;
+          aspect-ratio: 16/9;
+          height: auto;
+          display: block;
+        }
+      `}</style>
       {loading && <Loading />}
       <main>
         <section className="py-12 px-10 max-sm:p-8 bg-primary-maroon">
@@ -65,8 +74,8 @@ const EventExample = () => {
             <BootstrapCarousel selectedPost={selectedPost} />
           </div>
         </section>
-        <section>
-          <div className="px-48 max-md:px-12 mt-16 max-container">
+        <section className="w-screen">
+          <div className="max-w-screen-xl mx-auto px-6 md:px-12 lg:px-48 mt-16">
             <div
               className="rich-text"
               dangerouslySetInnerHTML={{

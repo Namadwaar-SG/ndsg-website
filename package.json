@@ -19,6 +19,7 @@
     "dotenv": "^16.4.5",
     "firebase": "^10.12.2",
     "firebase-admin": "^13.4.0",
+    "isomorphic-dompurify": "^2.26.0",
     "jose": "^6.0.11",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.4.0",
