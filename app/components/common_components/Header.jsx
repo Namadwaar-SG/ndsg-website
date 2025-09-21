@@ -130,6 +130,10 @@ const Header = () => {
             <Link href="/events">Events</Link>
           </li>
 
+          <li className="underline-section">
+            <Link href="/posts">Posts</Link>
+          </li>
+
           <li
             className="relative"
             onMouseEnter={handleMouse2}

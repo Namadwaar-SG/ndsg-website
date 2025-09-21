@@ -15,7 +15,7 @@ const db = admin.firestore();
 export async function GET() {
   try {
     let eventsQuery = db
-      .collection("website-post")
+      .collection("event-post")
       .orderBy("date", "desc")
       .limit(3);
 

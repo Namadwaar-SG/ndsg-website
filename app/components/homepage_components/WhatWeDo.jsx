@@ -5,15 +5,22 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { eventpics } from "@constants/fixed";
 import Link from "next/link";
-import Image from "@node_modules/next/image";
+import BlurredImageFill from "./BlurredImageFill";
+
 const WhatWeDo = () => {
   const recentThree = eventpics.slice(0, 3);
   const [events, setEvents] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("/api/get-latest-post")
+    fetch("/api/get-latest-event")
       .then((res) => res.json())
       .then(setEvents)
+      .catch(console.error);
+
+    fetch("/api/get-latest-post")
+      .then((res) => res.json())
+      .then(setPosts)
       .catch(console.error);
   }, []);
 
@@ -198,13 +205,9 @@ const WhatWeDo = () => {
         {events.map((item, index) => (
           <div key={index} className="aboutpagecards">
             <Link href={`/events/${item.id}`}>
-              <Image
-                className="w-full h-3/4 object-cover"
+              <BlurredImageFill
                 src={item.image_links[0]}
                 alt="Sunset in the mountains"
-                width={300}
-                height={300}
-                style={{ objectPosition: "top" }}
               />
               <div className="px-6 py-4">
                 <div className="text-lg">{item.title}</div>
@@ -216,6 +219,48 @@ const WhatWeDo = () => {
 
       <div className="ml-auto max-sm:max-container">
         <Link href="/events">
+          <Button label="Read More" type="" />
+        </Link>
+      </div>
+
+      {/* Posts */}
+      <div>
+        <h2 className="activities text-primary-maroon font-caudex text-2xl max-md:text-xl max-sm:text-lg">
+          Posts
+        </h2>
+      </div>
+
+      <Carousel
+        responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        showDots={false}
+        ssr={true} // means to render carousel on server-side.
+        keyBoardControl={true}
+        customTransition="transform 500ms ease-in-out"
+        transitionDuration={1000}
+        containerClass="carousel-container"
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-20-px"
+        className="font-palanquin "
+      >
+        {posts.map((item, index) => (
+          <div key={index} className="aboutpagecards">
+            <Link href={`/posts/${item.id}`}>
+              <BlurredImageFill
+                src={item.image_links[0]}
+                alt="Sunset in the mountains"
+              />
+              <div className="px-6 py-4">
+                <div className="text-lg">{item.title}</div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </Carousel>
+
+      <div className="ml-auto max-sm:max-container">
+        <Link href="/posts">
           <Button label="Read More" type="" />
         </Link>
       </div>
