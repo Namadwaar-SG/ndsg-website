@@ -30,6 +30,15 @@ export async function POST(request) {
         created_at: new Date().toISOString(),
       });
       return NextResponse.json({ success: true, id: docRef.id });
+    } else if (type === "Post") {
+      const docRef = await db.collection("website-post").add({
+        title: title,
+        date: date,
+        image_links: images,
+        rich_text: richText,
+        created_at: new Date().toISOString(),
+      });
+      return NextResponse.json({ success: true, id: docRef.id });
     } else {
       const docRef = await db.collection("upcoming-event-post").add({
         title: title,

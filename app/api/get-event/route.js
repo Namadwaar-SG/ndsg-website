@@ -17,33 +17,33 @@ export async function GET(request) {
   const pageSize = parseInt(searchParams.get("pageSize")) || 6;
   const cursor = searchParams.get("cursor");
 
-  let postsQuery = db
-    .collection("website-post")
+  let eventsQuery = db
+    .collection("event-post")
     .orderBy("date", "desc")
     .limit(pageSize);
 
   if (cursor) {
-    const cursorDoc = await db.collection("website-post").doc(cursor).get();
+    const cursorDoc = await db.collection("event-post").doc(cursor).get();
     if (!cursorDoc.exists) {
       return NextResponse.json({ error: "Invalid cursor" }, { status: 400 });
     }
 
-    postsQuery = db
-      .collection("website-post")
+    eventsQuery = db
+      .collection("event-post")
       .orderBy("date", "desc")
       .startAfter(cursorDoc)
       .limit(pageSize);
   }
 
-  const snapshot = await postsQuery.get();
-  const posts = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+  const snapshot = await eventsQuery.get();
+  const events = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
   const lastVisibleDoc = snapshot.docs[snapshot.docs.length - 1];
   const nextCursor = lastVisibleDoc ? lastVisibleDoc.id : null;
 
   // Get total post count
-  const countSnapshot = await db.collection("website-post").count().get();
+  const countSnapshot = await db.collection("event-post").count().get();
   const totalPosts = countSnapshot.data().count;
 
-  return NextResponse.json({ posts, nextCursor, totalPosts });
+  return NextResponse.json({ events, nextCursor, totalPosts });
 }

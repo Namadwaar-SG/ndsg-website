@@ -9,16 +9,16 @@ import Loading from "@app/components/common_components/Loading";
 import BootstrapCarousel from "@app/components/common_components/BootstrapCarousel";
 import "./carousel-only.css";
 
-const EventExample = () => {
-  const { eventIndex } = useParams();
+const PostExample = () => {
+  const { postIndex } = useParams();
   const [selectedPost, setSelectedPost] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     window.scroll(0, 0);
     async function fetchPost() {
       try {
-        const res = await fetch(`/api/get-event-by-id?id=${eventIndex}`);
-        if (!res.ok) throw new Error("Failed to fetch event");
+        const res = await fetch(`/api/get-post-by-id?id=${postIndex}`);
+        if (!res.ok) throw new Error("Failed to fetch post");
 
         const data = await res.json();
         setSelectedPost(data);
@@ -29,8 +29,8 @@ const EventExample = () => {
       }
     }
 
-    if (eventIndex) fetchPost();
-  }, [eventIndex]);
+    if (postIndex) fetchPost();
+  }, [postIndex]);
 
   return (
     <>
@@ -50,7 +50,7 @@ const EventExample = () => {
             <h1 className="font-caudex text-4xl max-md:text-2xl max-sm:text-xl font-bold text-center text-beige">
               {selectedPost?.title}
             </h1>
-            <Link href="/events">
+            <Link href="/posts">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -105,4 +105,4 @@ const EventExample = () => {
   );
 };
 
-export default EventExample;
+export default PostExample;

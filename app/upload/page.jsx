@@ -206,6 +206,7 @@ const Upload = () => {
           >
             <option value="Upcoming">Upcoming Event</option>
             <option value="Past">Past Event</option>
+            <option value="Post">Website Post</option>
           </select>
         </div>
       </div>

@@ -11,7 +11,7 @@ if (!admin.apps.length) {
 
 const db = admin.firestore();
 
-// GET /api/get-post-by-id?id=abc123
+// GET /api/get-event-by-id?id=abc123
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const id = searchParams.get("id");
@@ -21,7 +21,7 @@ export async function GET(request) {
   }
 
   try {
-    const docRef = db.collection("website-post").doc(id);
+    const docRef = db.collection("event-post").doc(id);
     const docSnap = await docRef.get();
 
     if (!docSnap.exists) {

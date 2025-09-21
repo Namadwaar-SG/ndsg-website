@@ -16,7 +16,7 @@ const Events = () => {
   const PAGE_SIZE = 6;
 
   async function fetchPage(cursor) {
-    let url = `/api/get-post?pageSize=${PAGE_SIZE}`;
+    let url = `/api/get-event?pageSize=${PAGE_SIZE}`;
     if (cursor) url += `&cursor=${cursor}`;
 
     const res = await fetch(url);
