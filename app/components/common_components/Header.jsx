@@ -300,6 +300,10 @@ const Header = () => {
               <Link href="/events">Events</Link>
             </li>
 
+            <li className="px-10 py-5 hover:bg-white border-b border-primary-maroon/20">
+              <Link href="/posts">Posts</Link>
+            </li>
+
             <li className="px-10 py-5 border-b border-primary-maroon/20">
               <div className={`flex justify-start items-center gap-1`}>
                 <Link href="/classes">Classes</Link>
