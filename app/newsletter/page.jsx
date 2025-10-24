@@ -24,7 +24,7 @@ const Newsletter = () => {
     pageNum >= links.length - 1 ? setPageNum(pageNum) : setPageNum(pageNum + 1);
   const previousPage = () =>
     pageNum == 1 ? setPageNum(pageNum) : setPageNum(pageNum - 1);
-  const [selected, setSelected] = useState("newsletter_6");
+  const [selected, setSelected] = useState("newsletter_7");
 
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
@@ -73,7 +73,9 @@ const Newsletter = () => {
       const url = `/api/list-newsletter-files?folder=${selected}`;
       const res = await fetch(url);
       if (!res.ok) throw new Error("Failed to fetch newsletter items");
-      const data = await res.json();
+      const data = await res
+        .json()
+        .then((res) => res.filter((obj) => obj.name.includes(".png")));
       setLinks(data);
       console.log("Fetched links:", data);
     } catch (error) {
@@ -109,6 +111,7 @@ const Newsletter = () => {
             <option value="newsletter_4">{"Edition 4 (2024)"}</option>
             <option value="newsletter_5">{"Edition 5 (2025)"}</option>
             <option value="newsletter_6">{"Edition 6 (2025)"}</option>
+            <option value="newsletter_7">{"Edition 7 (2025)"}</option>
           </select>
         </div>
 
