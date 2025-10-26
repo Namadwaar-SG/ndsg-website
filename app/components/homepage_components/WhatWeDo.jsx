@@ -72,6 +72,21 @@ const WhatWeDo = () => {
         className="font-palanquin"
       >
         <div className="aboutpagecards">
+          <div className="aboutpagecards">
+            <Link href="/realityretreat">
+              <div className="absolute top-2 right-2 z-20 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-lg shadow-md">
+                New!!
+              </div>
+              <BlurredImageFill
+                className="w-full h-4/5 object-cover"
+                src="/assets/images/reality-retreat.jpeg"
+                alt="Sunset in the mountains"
+              />
+              <div className="px-6 py-4">
+                <div className="text-lg">Reality Retreat</div>
+              </div>
+            </Link>
+          </div>
           <Link href="/weeklysatsang">
             <img
               className="w-full h-4/5 object-cover"

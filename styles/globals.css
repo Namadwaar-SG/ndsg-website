@@ -40,7 +40,7 @@ h2.activities:after {
   }
 
   .aboutpagecards {
-    @apply rounded overflow-hidden shadow-lg mx-5 mb-10 h-80
+    @apply relative rounded overflow-hidden shadow-lg mx-5 mb-10 h-80;
   }
 
 }
