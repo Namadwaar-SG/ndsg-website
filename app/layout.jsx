@@ -2,6 +2,7 @@ import React from "react";
 import "@styles/globals.css";
 import Header from "@app/components/common_components/Header";
 import Script from "next/script";
+import { initGA } from "./analytics";
 
 // common for all pages within app
 export const metadata = {
@@ -10,6 +11,7 @@ export const metadata = {
 };
 
 const RootLayout = ({ children }) => {
+  initGA();
   return (
     <html lang="en">
       <head>

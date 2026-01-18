@@ -9,6 +9,7 @@ import { db } from "@app/firebaseconfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { downloadSelectedPages } from "@lib/pdf-maker";
 import Loading from "@app/components/common_components/Loading";
+import { trackButtonClick } from "../analytics";
 
 const Newsletter = () => {
   const [links, setLinks] = useState([]);
@@ -24,7 +25,7 @@ const Newsletter = () => {
     pageNum >= links.length - 1 ? setPageNum(pageNum) : setPageNum(pageNum + 1);
   const previousPage = () =>
     pageNum == 1 ? setPageNum(pageNum) : setPageNum(pageNum - 1);
-  const [selected, setSelected] = useState("newsletter_7");
+  const [selected, setSelected] = useState("newsletter_8");
 
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
@@ -112,6 +113,7 @@ const Newsletter = () => {
             <option value="newsletter_5">{"Edition 5 (2025)"}</option>
             <option value="newsletter_6">{"Edition 6 (2025)"}</option>
             <option value="newsletter_7">{"Edition 7 (2025)"}</option>
+            <option value="newsletter_8">{"Edition 8 (2025)"}</option>
           </select>
         </div>
 
@@ -127,6 +129,7 @@ const Newsletter = () => {
                 <div
                   key={i}
                   onClick={() => {
+                    trackButtonClick("Submit Button");
                     setSection(bookmark.name);
                     setPageNum(bookmark.page);
                     setStartPage(bookmark.page);
@@ -206,14 +209,14 @@ const Newsletter = () => {
                 await downloadSelectedPages(
                   `/api/fetch-pdf?url=${encodeURIComponent(
                     constants.editions.find(
-                      (edition) => edition.edition === selected
-                    ).downloadLink
+                      (edition) => edition.edition === selected,
+                    ).downloadLink,
                   )}`,
                   `ND_Newsletter_Edition_${selected.charAt(
-                    selected.length - 1
+                    selected.length - 1,
                   )}${section === "Home" ? "" : `_${section}`}`,
                   startPage,
-                  endPage
+                  endPage,
                 );
                 setLoading(false);
               }}
