@@ -121,6 +121,9 @@ const Header = () => {
                   <li className="p-2 hover:bg-primary-orange">
                     <Link href="/akhandanama">Akhanda Nama</Link>
                   </li>
+                  <li className="p-2 hover:bg-primary-orange">
+                    <Link href="/community_service">Community Service</Link>
+                  </li>
                 </ul>
               </div>
             )}
