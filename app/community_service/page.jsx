@@ -7,13 +7,22 @@ const StoryTime = () => {
       <SectionHeader sectionLabel="Community Service" />
       <section className="mt-12 max-sm:mt-8 flex flex-row max-lg:flex-col gap-24 max-lg:gap-8 max-lg:items-center">
         <div className="w-1/2 max-lg:w-full flex items-center justify-center ml-8">
-          <Image
-            src="/assets/images/nkf_volunteer.jpg"
-            alt="Logo"
-            height={200}
-            width={1600}
-          />
+          <div className="relative w-full ">
+            <Image
+              src="/assets/images/volunteering_nkf_2.png"
+              alt="Volunteer 2"
+              width={1600}
+              height={750}
+            />
+            <Image
+              src="/assets/images/nkf_volunteer.jpg"
+              alt="Volunteer 1"
+              width={1600}
+              height={750}
+            />
+          </div>
         </div>
+
         <div className="w-1/2 max-lg:w-full max-lg:padding-x justify-center flex flex-col items-center pr-8 max-lg:pr-0">
           <h1 className="font-caudex text-4xl max-md:text-3xl max-md:leading-8 font-bold text-primary-maroon">
             Community Volunteering Activities of Namadwaar Singapore Family
