@@ -8,7 +8,6 @@ import Link from "next/link";
 import BlurredImageFill from "./BlurredImageFill";
 
 const WhatWeDo = () => {
-  const recentThree = eventpics.slice(0, 3);
   const [events, setEvents] = useState([]);
   const [posts, setPosts] = useState([]);
 
@@ -59,8 +58,6 @@ const WhatWeDo = () => {
 
       <Carousel
         responsive={responsive}
-        swipeable={false}
-        draggable={false}
         showDots={true}
         ssr={true} // means to render carousel on server-side.
         keyBoardControl={true}
@@ -72,21 +69,22 @@ const WhatWeDo = () => {
         className="font-palanquin"
       >
         <div className="aboutpagecards">
-          <div className="aboutpagecards">
-            <Link href="/realityretreat">
-              <div className="absolute top-2 right-2 z-20 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-lg shadow-md">
-                New!!
-              </div>
-              <BlurredImageFill
-                className="w-full h-4/5 object-cover"
-                src="/assets/images/reality-retreat.jpeg"
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="text-lg">Reality Retreat</div>
-              </div>
-            </Link>
-          </div>
+          <Link href="/realityretreat">
+            <div className="absolute top-2 right-2 z-20 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-lg shadow-md">
+              New!!
+            </div>
+            <BlurredImageFill
+              className="w-full h-4/5 object-cover"
+              src="/assets/images/reality-retreat.jpeg"
+              alt="Sunset in the mountains"
+            />
+            <div className="px-6 py-4">
+              <div className="text-lg">Reality Retreat</div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="aboutpagecards">
           <Link href="/weeklysatsang">
             <img
               className="w-full h-4/5 object-cover"
@@ -98,6 +96,7 @@ const WhatWeDo = () => {
             </div>
           </Link>
         </div>
+
         <div className="aboutpagecards">
           <Link href="/housesatsang">
             <img
@@ -110,6 +109,7 @@ const WhatWeDo = () => {
             </div>
           </Link>
         </div>
+
         <div className="aboutpagecards">
           <Link href="/storytime">
             <img
@@ -132,6 +132,19 @@ const WhatWeDo = () => {
             />
             <div className="px-6 py-4">
               <div className="text-lg">Akhanda Nama</div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="aboutpagecards">
+          <Link href="/community_service">
+            <BlurredImageFill
+              className="w-full h-4/5 object-cover"
+              src="/assets/images/volunteering_nkf_2.png"
+              alt="Sunset in the mountains"
+            />
+            <div className="px-6 py-4">
+              <div className="text-lg">Community Service</div>
             </div>
           </Link>
         </div>
