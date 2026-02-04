@@ -89,7 +89,7 @@ const WhatWeDo = () => {
             <img
               className="w-full h-4/5 object-cover"
               src="/assets/images/satsang.jpeg"
-              alt="Sunset in the mountains"
+              alt="Weekly Satsang"
             />
             <div className="px-6 py-4">
               <div className="text-lg">Weekly Satsang</div>
@@ -102,7 +102,7 @@ const WhatWeDo = () => {
             <img
               className="w-full h-4/5 object-cover"
               src="/assets/images/house4.jpeg"
-              alt="Sunset in the mountains"
+              alt="House Satsang"
             />
             <div className="px-6 py-4">
               <div className="text-lg">House Satsang</div>
@@ -115,7 +115,7 @@ const WhatWeDo = () => {
             <img
               className="w-full h-4/5 object-cover"
               src="/assets/images/pic3.jpeg"
-              alt="Sunset in the mountains"
+              alt="Kadhi Kelu Kadhai Kelu"
             />
             <div className="px-6 py-4">
               <div className="text-lg">Kadhai Kelu Kadhai Kelu</div>
@@ -128,7 +128,7 @@ const WhatWeDo = () => {
             <img
               className="w-full h-4/5 object-cover"
               src="/assets/images/pc6.jpeg"
-              alt="Sunset in the mountains"
+              alt="Akhandanama"
             />
             <div className="px-6 py-4">
               <div className="text-lg">Akhanda Nama</div>
@@ -141,7 +141,7 @@ const WhatWeDo = () => {
             <BlurredImageFill
               className="w-full h-4/5 object-cover"
               src="/assets/images/volunteering_nkf_2.png"
-              alt="Sunset in the mountains"
+              alt="Volunteering"
             />
             <div className="px-6 py-4">
               <div className="text-lg">Community Service</div>

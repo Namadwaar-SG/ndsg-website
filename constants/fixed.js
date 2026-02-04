@@ -138,6 +138,17 @@ export const houseSatsangPics = [
   },
 ];
 
+export const thaipusam2026Pics = [
+  {
+    imgURL: "/assets/images/thaipusam_1.jpg",
+    label: "mg",
+  },
+  {
+    imgURL: "/assets/images/thaipusam_2.png",
+    label: "mg2",
+  },
+];
+
 // reality retreat pics
 export const realityRetreatPics = [
   {
