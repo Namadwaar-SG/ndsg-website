@@ -65,7 +65,7 @@ const Posts = () => {
         <section className="mb-12">
           <br></br>
           <div className="mx-5 max-sm:mx-20 grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 justify-center gap-5">
-            {currentItems.map((item, index) => (
+            {(currentItems || []).map((item, index) => (
               <div
                 className="group relative overflow-hidden cursor-pointer"
                 key={index}

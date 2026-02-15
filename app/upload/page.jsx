@@ -47,7 +47,7 @@ const Upload = () => {
           }
 
           Quill.register("formats/video", CustomVideo);
-        }
+        },
       );
     }
   }, []);
@@ -57,7 +57,7 @@ const Upload = () => {
     formData.append("file", file);
     formData.append(
       "upload_preset",
-      `${process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET}`
+      `${process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET}`,
     );
 
     const res = await fetch(
@@ -65,7 +65,7 @@ const Upload = () => {
       {
         method: "POST",
         body: formData,
-      }
+      },
     );
 
     const data = await res.json();
@@ -207,6 +207,7 @@ const Upload = () => {
             <option value="Upcoming">Upcoming Event</option>
             <option value="Past">Past Event</option>
             <option value="Post">Website Post</option>
+            <option value="Community Service">Community Service Post</option>
           </select>
         </div>
       </div>

@@ -18,7 +18,7 @@ export async function POST(request) {
     if (!images || !richText || !Array.isArray(images)) {
       return NextResponse.json(
         { error: "Missing or invalid fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
     if (type === "Past") {
@@ -32,6 +32,15 @@ export async function POST(request) {
       return NextResponse.json({ success: true, id: docRef.id });
     } else if (type === "Post") {
       const docRef = await db.collection("website-post").add({
+        title: title,
+        date: date,
+        image_links: images,
+        rich_text: richText,
+        created_at: new Date().toISOString(),
+      });
+      return NextResponse.json({ success: true, id: docRef.id });
+    } else if (type === "Community Service") {
+      const docRef = await db.collection("community-service-post").add({
         title: title,
         date: date,
         image_links: images,
