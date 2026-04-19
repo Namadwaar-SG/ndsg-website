@@ -144,7 +144,6 @@ const Upload = () => {
             accept="image/*"
             onChange={handleFileChange}
             className="hidden"
-            disabled={files.length === 5}
           />
         </label>
         {files.length > 0 && (
