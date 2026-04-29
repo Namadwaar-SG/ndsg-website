@@ -151,6 +151,41 @@
         { "name": "Activities", "page": 25, "endPage": 25 }
       ],
       "downloadLink": "https://drive.google.com/uc?export=download&id=1zjCaaWSUNonm209EJO6FvNcqr6fXyqrh"
+    },
+    {
+      "edition": "newsletter_9",
+      "bookmarks": [
+        { "name": "Home", "page": 1, "endPage": 1 },
+        { "name": "Preface", "page": 2, "endPage": 3 },
+        { "name": "Activities", "page": 4, "endPage": 4 },
+        { "name": "Monthly Updates: Jan'26", "page": 5, "endPage": 6 },
+        { "name": "Monthly Updates: Feb'26", "page": 7, "endPage": 8 },
+        { "name": "Monthly Updates: Mar'26", "page": 9, "endPage": 11 },
+        {
+          "name": "Navavidha Bhakti: Nine Paths of Devotion",
+          "page": 12,
+          "endPage": 15
+        },
+        {
+          "name": "Importance of Music in Sanatana Dharma",
+          "page": 16,
+          "endPage": 18
+        },
+        { "name": "Gopakuteeram Kids' Corner", "page": 19, "endPage": 19 },
+        {
+          "name": "Science & Scriptures - Ayurveda, Homeopathy & Modern Medicine",
+          "page": 20,
+          "endPage": 23
+        },
+        {
+          "name": "Spiritual Heritage of Senganoor and Sri Srinivasa Perumal",
+          "page": 24,
+          "endPage": 26
+        },
+        { "name": "கோபகுடீரம் - ஒரு நல்ல தொடக்கம்", "page": 27, "endPage": 27 },
+        { "name": "மனத்துக்கு இனியான் - 4", "page": 28, "endPage": 33 }
+      ],
+      "downloadLink": "https://drive.google.com/uc?export=download&id=1pn_ruHM0Qw8h0bTF7WhXgd_pPuFPyLqF"
     }
   ]
 }
