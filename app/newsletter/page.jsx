@@ -25,7 +25,7 @@ const Newsletter = () => {
     pageNum >= links.length - 1 ? setPageNum(pageNum) : setPageNum(pageNum + 1);
   const previousPage = () =>
     pageNum == 1 ? setPageNum(pageNum) : setPageNum(pageNum - 1);
-  const [selected, setSelected] = useState("newsletter_9");
+  const [selected, setSelected] = useState("newsletter_10");
 
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
@@ -115,6 +115,7 @@ const Newsletter = () => {
             <option value="newsletter_7">{"Edition 7 (2025)"}</option>
             <option value="newsletter_8">{"Edition 8 (2025)"}</option>
             <option value="newsletter_9">{"Edition 9 (2026)"}</option>
+            <option value="newsletter_10">{"Edition 10 (2026)"}</option>
           </select>
         </div>
 
